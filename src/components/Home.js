@@ -3,13 +3,19 @@ import logo from "../assets/logo.jpg";
 
 const Home = () => {
   return (
-    <div className="flex  flex-col bg-purple-50 min-h-screen">
+    <div className="flex flex-col bg-purple-50 min-h-screen">
       {/* Header Section */}
       <header className="bg-white shadow-lg">
         <div className="container mx-auto flex items-center justify-between p-4">
           <div className="flex items-center space-x-4">
-            <img src={logo} alt="Arnim Holidays Logo" className="h-12" />
-            <h1 className="text-xl font-bold text-green-700">ARNIM HOLIDAYS</h1>
+            <img
+              src={logo}
+              alt="Arnim Holidays Logo"
+              className="h-12 scale-150 mr-2"
+            />
+            <h1 className="text-xl font-bold text-green-700">
+              CARDINAL TOUR & TRAVEL
+            </h1>
           </div>
           <div className="text-sm text-gray-700">
             <p>Customer Service:</p>
@@ -22,16 +28,154 @@ const Home = () => {
 
       {/* Navigation Bar */}
       <nav className="bg-pink-500 text-white">
-        <div className="container mx-auto flex justify-between p-4">
-          <ul className="flex space-x-4">
-            <li className="hover:underline cursor-pointer">Home</li>
-            <li className="hover:underline cursor-pointer">Our Services</li>
-            <li className="hover:underline cursor-pointer">Visa Services</li>
-            <li className="hover:underline cursor-pointer">Air Ticket</li>
-            <li className="hover:underline cursor-pointer">Tour Packages</li>
-            <li className="hover:underline cursor-pointer">PSA</li>
-            <li className="hover:underline cursor-pointer">About Us</li>
-            <li className="hover:underline cursor-pointer">Contact Us</li>
+        <div className="flex justify-between container mx-auto p-4">
+          <ul className="flex space-x-4 relative">
+            {/* Home */}
+            <li className="relative group">
+              <a className="hover:underline cursor-pointer">Home</a>
+            </li>
+
+            {/* Our Services */}
+            <li className="relative group">
+              <a className="hover:underline cursor-pointer">Our Services</a>
+              <ul className="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg z-10">
+                <li className="px-4 py-2 hover:bg-gray-100">
+                  <a
+                    href="https://arnimholidays.com/visa-services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visa Services
+                  </a>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100">
+                  <a
+                    href="https://arnimair.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Air Ticket
+                  </a>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100">
+                  <a
+                    href="https://arnimholidays.com/group-ticket"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Group Ticket
+                  </a>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100">
+                  <a
+                    href="https://arnimholidays.com/umrah"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Umrah Packages
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            {/* Visa Services */}
+            <li className="relative group">
+              <a
+                href="https://arnimholidays.com/visa-services"
+                className="hover:underline cursor-pointer"
+              >
+                Visa Services
+              </a>
+            </li>
+
+            {/* Air Ticket */}
+            <li className="relative group">
+              <a
+                href="https://arnimair.com"
+                className="hover:underline cursor-pointer"
+              >
+                Air Ticket
+              </a>
+            </li>
+
+            {/* Tour Packages */}
+            <li className="relative group">
+              <a className="hover:underline cursor-pointer">Tour Packages</a>
+              <ul className="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg z-10">
+                <li className="px-4 py-2 hover:bg-gray-100">
+                  <a
+                    href="https://arnimholidays.com/tour-packages"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bangladesh Tours
+                  </a>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100">
+                  <a
+                    href="https://arnimholidays.com/quarantine-packages"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Quarantine Packages
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            {/* PSA */}
+            <li className="relative group">
+              <a className="hover:underline cursor-pointer">PSA</a>
+              <ul className="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg z-10">
+                <li className="px-4 py-2 hover:bg-gray-100">
+                  <a
+                    href="https://arnimholidays.com/airasia/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Air Asia
+                  </a>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100">
+                  <a
+                    href="https://arnimholidays.com/jetstar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Jetstar Air
+                  </a>
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100">
+                  <a
+                    href="https://arnimholidays.com/nokair"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Nok Air
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            {/* About Us */}
+            <li className="relative group">
+              <a
+                href="https://arnimholidays.com/about-arnimholidays.php"
+                className="hover:underline cursor-pointer"
+              >
+                About Us
+              </a>
+            </li>
+
+            {/* Contact Us */}
+            <li className="relative group">
+              <a
+                href="https://arnimholidays.com/contact-us.php"
+                className="hover:underline cursor-pointer"
+              >
+                Contact Us
+              </a>
+            </li>
           </ul>
           <div className="flex space-x-4">
             <button className="bg-green-600 px-4 py-2 rounded-md hover:bg-green-700">
