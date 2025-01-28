@@ -25,7 +25,7 @@ import TourPackages from "./components/TourPackages";
 import TransferServices from "./components/TransferServices";
 import UmrahPackages from "./components/UmrahPackages";
 import VisaServices from "./components/VisaServices";
-import ClientLogin from "./components/ClientLogin";
+import AgentLogin from "./components/AgentLogin";
 
 function App() {
   return (
@@ -70,7 +70,7 @@ function App() {
             <Route path="/transfer-services" element={<TransferServices />} />
             <Route path="/umrah-packages" element={<UmrahPackages />} />
             <Route path="/visa-services" element={<VisaServices />} />
-            <Route path="/client-login" element={<ClientLogin />} />
+            <Route path="/agent-login" element={<AgentLogin />} />
           </Routes>
         </div>
 

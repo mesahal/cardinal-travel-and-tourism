@@ -19,7 +19,7 @@ const Header = () => {
           </div>
           <div className="text-sm text-gray-700">
             <p>Customer Service:</p>
-            <p className="text-pink-500 font-bold">Hot line - 01897619789</p>
+            <p className="text-purple-500 font-bold">Hot line - 01897619789</p>
             <p>Tickets - 01897619790</p>
             <p>Visa & tour package - 01897619791</p>
           </div>

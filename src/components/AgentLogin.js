@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ClientLogin = () => {
+const AgentLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [captcha, setCaptcha] = useState("");
@@ -31,7 +31,7 @@ const ClientLogin = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm"
               placeholder="Enter your email or ID"
               required
             />
@@ -49,7 +49,7 @@ const ClientLogin = () => {
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm"
                 placeholder="Enter your password"
                 required
               />
@@ -68,14 +68,14 @@ const ClientLogin = () => {
                 id="captcha"
                 value={captcha}
                 onChange={(e) => setCaptcha(e.target.value)}
-                className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm"
                 placeholder="Enter Captcha"
                 required
               />
               <button
                 type="button"
                 onClick={handleRefreshCaptcha}
-                className="text-blue-500 hover:text-blue-700 text-sm font-medium"
+                className="text-purple-500 hover:text-purple-700 text-sm font-medium"
               >
                 Refresh Captcha
               </button>
@@ -85,17 +85,20 @@ const ClientLogin = () => {
             <label className="inline-flex items-center">
               <input
                 type="checkbox"
-                className="h-4 w-4 text-blue-600 border-gray-300 rounded"
+                className="h-4 w-4 text-purple-600 border-gray-300 rounded"
               />
               <span className="ml-2 text-sm text-gray-600">Remember me</span>
             </label>
-            <a href="#" className="text-blue-500 hover:text-blue-700 text-sm">
+            <a
+              href="#"
+              className="text-purple-500 hover:text-purple-700 text-sm"
+            >
               Forgot Password?
             </a>
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg"
+            className="w-full bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-4 rounded-lg"
           >
             Login
           </button>
@@ -105,7 +108,7 @@ const ClientLogin = () => {
             New User?{" "}
             <a
               href="#"
-              className="text-blue-500 hover:text-blue-700 font-medium"
+              className="text-purple-500 hover:text-purple-700 font-medium"
             >
               Register Now
             </a>
@@ -116,4 +119,4 @@ const ClientLogin = () => {
   );
 };
 
-export default ClientLogin;
+export default AgentLogin;
