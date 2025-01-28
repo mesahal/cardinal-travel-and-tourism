@@ -1,17 +1,14 @@
 import React from "react";
+import logo from "../assets/logo.jpg";
 
 const Home = () => {
   return (
-    <div className="bg-purple-50 min-h-screen">
+    <div className="flex  flex-col bg-purple-50 min-h-screen">
       {/* Header Section */}
       <header className="bg-white shadow-lg">
         <div className="container mx-auto flex items-center justify-between p-4">
           <div className="flex items-center space-x-4">
-            <img
-              src="/path/to/logo.png"
-              alt="Arnim Holidays Logo"
-              className="h-12"
-            />
+            <img src={logo} alt="Arnim Holidays Logo" className="h-12" />
             <h1 className="text-xl font-bold text-green-700">ARNIM HOLIDAYS</h1>
           </div>
           <div className="text-sm text-gray-700">
@@ -48,7 +45,7 @@ const Home = () => {
       </nav>
 
       {/* Services Section */}
-      <section className="container mx-auto py-8">
+      <section className="flex flex-grow flex-col container mx-auto py-8">
         <h2 className="text-center text-xl font-bold text-red-600 mb-4">
           Our cheapest and most reliable services
         </h2>
