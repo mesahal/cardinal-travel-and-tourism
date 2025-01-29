@@ -57,7 +57,7 @@ const ContactForm = () => {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           value={formData.name}
           onChange={handleChange}
           required
@@ -67,7 +67,7 @@ const ContactForm = () => {
           type="text"
           name="mobile"
           placeholder="Your Mobile Number"
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           value={formData.mobile}
           onChange={handleChange}
           required
@@ -78,7 +78,7 @@ const ContactForm = () => {
           name="message"
           placeholder="Your Message"
           rows="4"
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           value={formData.message}
           onChange={handleChange}
           required
@@ -86,7 +86,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="w-full bg-purple-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
+          className="w-full bg-purple-600 text-white font-semibold py-3 rounded-lg hover:bg-purple-700 transition duration-300 shadow-md"
         >
           Send Message
         </button>

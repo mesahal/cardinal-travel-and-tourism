@@ -43,9 +43,7 @@ const Home = () => {
               alt="Arnim Protect"
               className="w-full object-contain rounded-md mb-3 flex-grow"
             />
-            <h3 className="text-center font-bold text-blue-700">
-              Arnim Protect
-            </h3>
+            <h3 className="text-center font-bold text-blue-700">Protect</h3>
             <p className="text-center">Protect Policy for You & Your Family</p>
           </div>
           <div className="flex flex-col bg-purple-100 p-4 shadow-lg rounded-lg">

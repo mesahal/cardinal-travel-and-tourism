@@ -53,7 +53,7 @@ const Navbar = () => {
                   <Link to="/student-visa">Student Visa</Link>
                 </li>
                 <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/arnim-protect">Arnim Protect</Link>
+                  <Link to="/arnim-protect">Protect</Link>
                 </li>
                 <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/hotel-booking">Hotel Booking</Link>
