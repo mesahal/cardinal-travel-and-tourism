@@ -31,45 +31,45 @@ const Navbar = () => {
                 Our Services
               </span>
               <ul className="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg z-10 w-36">
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/visa-service">Visa Services</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/air-ticket">Air Ticket</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/group-ticket">Group Ticket</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/umrah-packages">Umrah Packages</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/quarantine-packages">Quarantine Packages</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/tour-packages">Tour Packages</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/student-visa">Student Visa</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/arnim-protect">Arnim Protect</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/hotel-booking">Hotel Booking</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/transfer-services">Transfer Services</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/malaysia-singapore-bus-ticket">
                     Malaysia-Singapore Bus Ticket
                   </Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/ferry-services">Ferry Services</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/medical-tourism-to-thailand">
                     Medical Tourism to Thailand
                   </Link>
@@ -113,22 +113,22 @@ const Navbar = () => {
                 PSA
               </span>
               <ul className="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg z-10 w-36">
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/airasia">Air Asia</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/jetstar-air">Jetstar Air</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/nok-air">Nok Air</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/firefly">Firefly</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/spicejet">SpiceJet</Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-purple-100">
+                <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/indigo-air">IndiGo Air</Link>
                 </li>
               </ul>
