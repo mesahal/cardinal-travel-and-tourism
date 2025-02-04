@@ -26,6 +26,7 @@ import TransferServices from "./components/TransferServices";
 import UmrahPackages from "./components/UmrahPackages";
 import VisaServices from "./components/VisaServices";
 import AgentLogin from "./components/AgentLogin";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
             <Route path="/airasia" element={<AirAsia />} />
             <Route path="/airticket" element={<AirTicket />} />
             <Route path="/arnim-protect" element={<ArnimProtect />} />
-            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/contact-us" element={<ContactForm />} />
             <Route path="/ferry-services" element={<FerryServices />} />
             <Route path="/firefly" element={<Firefly />} />
             <Route path="/group-ticket" element={<GroupTicket />} />
