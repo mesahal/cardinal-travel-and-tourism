@@ -68,16 +68,34 @@ const Home = () => {
 
         {/* Office Location Section */}
         <div className="mt-12 bg-white p-6 rounded-lg border-2 border-purple-200">
-          <div className="flex items-center justify-center mb-4">
+          <div className="flex items-center justify-center mb-6">
             <MapPin className="w-6 h-6 text-red-600 mr-2" />
             <h3 className="text-xl font-bold text-gray-800">
-              Our Office Location
+              Our Office Locations
             </h3>
           </div>
-          <div className="text-center text-gray-600">
-            <p className="mb-2">123 Business Center, Level 4</p>
-            <p className="mb-2">Main Street, Downtown Area</p>
-            <p>Dhaka, Bangladesh</p>
+          <div className="flex flex-col md:flex-row justify-around space-y-6 md:space-y-0 md:space-x-6">
+            {/* Malaysia Office */}
+            <div className="text-center text-gray-600">
+              <h4 className="text-lg font-semibold mb-2">Malaysia Office</h4>
+              <p className="mb-2">No. 6G, Jalan Dato Shaik Ahmad</p>
+              <p className="mb-2">70000, Seremban</p>
+              <p>Negeri Sembilan, Malaysia</p>
+            </div>
+            {/* Thailand Office */}
+            <div className="text-center text-gray-600">
+              <h4 className="text-lg font-semibold mb-2">Thailand Office</h4>
+              <p className="mb-2">129/2 Soi Sukhumvit 55 (Thonglor 7)</p>
+              <p className="mb-2">Klongtannua, Wattana</p>
+              <p>Bangkok 10110, Thailand</p>
+            </div>
+            {/* Bangladesh Office */}
+            <div className="text-center text-gray-600">
+              <h4 className="text-lg font-semibold mb-2">Bangladesh Office</h4>
+              <p className="mb-2">6/19 Eastern Plaza, 70 Bir Uttam</p>
+              <p className="mb-2">CR Datta Road, Dhanmondi,</p>
+              <p>Dhaka-1205</p>
+            </div>
           </div>
         </div>
       </section>
