@@ -43,7 +43,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/airasia" element={<AirAsia />} />
-            <Route path="/airticket" element={<AirTicket />} />
+            <Route path="/air-ticket" element={<AirTicket />} />
             <Route path="/arnim-protect" element={<ArnimProtect />} />
             <Route path="/contact-us" element={<ContactForm />} />
             <Route path="/ferry-services" element={<FerryServices />} />
