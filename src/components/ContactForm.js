@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { Send, User, Phone, MessageSquare } from "lucide-react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -13,11 +14,11 @@ const ContactForm = () => {
     const { name, value } = e.target;
 
     if (name === "mobile") {
-      const bdMobileRegex = /^01[3-9]\d{8}$/; // Valid Bangladeshi mobile number regex
+      const bdMobileRegex = /^01[3-9]\d{8}$/;
       if (!bdMobileRegex.test(value)) {
         setMobileError("Invalid mobile number!");
       } else {
-        setMobileError(""); // Clear error if valid
+        setMobileError("");
       }
     }
 
@@ -48,49 +49,90 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-white shadow-lg rounded-2xl">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
-        Contact Us
-      </h2>
-      <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto">
+        <div className="bg-white shadow-2xl rounded-3xl overflow-hidden">
+          <div className="md:flex">
+            <div className="md:w-1/2 bg-gradient-to-br from-purple-600 to-indigo-600 p-8 text-white">
+              <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+              <p className="mb-4 text-purple-100">
+                We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              </p>
+              {/* <div className="space-y-4 mt-8">
+                <div className="flex items-center space-x-4">
+                  <Phone className="w-5 h-5 text-purple-200" />
+                  <span>+880 1XXX-XXXXXX</span>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <MessageSquare className="w-5 h-5 text-purple-200" />
+                  <span>info@example.com</span>
+                </div>
+              </div> */}
+            </div>
 
-        <input
-          type="text"
-          name="mobile"
-          placeholder="Your Mobile Number"
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
-          value={formData.mobile}
-          onChange={handleChange}
-          required
-        />
-        {mobileError && <p className="text-red-500 text-sm">{mobileError}</p>}
+            <div className="md:w-1/2 p-8">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Send Message</h3>
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <User className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
 
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          rows="4"
-          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <Phone className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <input
+                    type="text"
+                    name="mobile"
+                    placeholder="Your Mobile Number"
+                    className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                    value={formData.mobile}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                {mobileError && (
+                  <p className="text-red-500 text-sm mt-1">{mobileError}</p>
+                )}
 
-        <button
-          type="submit"
-          className="w-full bg-purple-600 text-white font-semibold py-3 rounded-lg hover:bg-purple-700 transition duration-300 shadow-md"
-        >
-          Send Message
-        </button>
-      </form>
+                <div className="relative">
+                  <div className="absolute top-3 left-0 pl-3 flex items-center pointer-events-none">
+                    <MessageSquare className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    rows="4"
+                    className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-3 px-6 rounded-xl hover:from-purple-700 hover:to-indigo-700 transition duration-300 shadow-lg flex items-center justify-center space-x-2"
+                >
+                  <span>Send Message</span>
+                  <Send className="w-5 h-5" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -53,7 +53,7 @@ const Navbar = () => {
                   <Link to="/student-visa">Student Visa</Link>
                 </li>
                 <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/arnim-protect">Protect</Link>
+                  <Link to="/arnim-protect">Cardinal Protect</Link>
                 </li>
                 <li className="px-4 py-2 hover:bg-purple-400">
                   <Link to="/hotel-booking">Hotel Booking</Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
             </li>
 
             {/* PSA */}
-            <li className="relative group">
+            {/* <li className="relative group">
               <span className="hover:bg-white p-2 hover:text-black cursor-pointer">
                 PSA
               </span>
@@ -132,7 +132,7 @@ const Navbar = () => {
                   <Link to="/indigo-air">IndiGo Air</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
 
             {/* About Us */}
             <li className="relative group">
