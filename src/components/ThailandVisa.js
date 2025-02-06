@@ -1,9 +1,9 @@
-import React from 'react';
-import { Phone, Mail, ChevronDown } from 'lucide-react';
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import ContactSidebar from "./ContactSidebar";
 
 function ThailandVisa() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const countries = [
     { name: "Thailand", path: "/thailand-visa-service" },
@@ -16,7 +16,7 @@ function ThailandVisa() {
     { name: "Cambodia", path: "/cambodia-visa-service" },
     { name: "UAE (Dubai)", path: "/uae-dubai-visa-service" },
     { name: "Qatar", path: "/qatar-visa-service" },
-    { name: "Saudi Arabia (KSA)", path: "/saudi-arabia-visa-service" }
+    { name: "Saudi Arabia (KSA)", path: "/saudi-arabia-visa-service" },
   ];
 
   const requiredDocuments = [
@@ -24,18 +24,20 @@ function ThailandVisa() {
     "Recent 3.5 cm x 4.5 cm size Photo with white background scan copy",
     "Visiting Card & NID",
     "Bank Statement for last six months & Bank Solvency Certificate",
-    "Document indicating current location (If Stay Outside of Bangladesh)"
+    "Document indicating current location (If Stay Outside of Bangladesh)",
   ];
 
   const additionalDocuments = [
     "Letter of appointment from hospital/medical center for Medical Visa",
     "Student ID Card for Student (if child travel with parent)",
     "Birth Certificate for Infant (if child travel with parent)",
-    "Marriage Certificate (only for newly married couple)"
+    "Marriage Certificate (only for newly married couple)",
   ];
 
   const handleCountryChange = (event) => {
-    const selectedPath = countries.find(country => country.name === event.target.value)?.path;
+    const selectedPath = countries.find(
+      (country) => country.name === event.target.value
+    )?.path;
     if (selectedPath) {
       navigate(selectedPath);
     }
@@ -49,21 +51,25 @@ function ThailandVisa() {
             Thailand Visa Service From Bangladesh
           </h1>
           <p className="text-gray-600">
-            Arnim Holidays Authorized Visa Submitting Agents of
-            Royal Thai Embassy in Dhaka, Bangladesh
+            Arnim Holidays Authorized Visa Submitting Agents of Royal Thai
+            Embassy in Dhaka, Bangladesh
           </p>
         </header>
 
         {/* Country Selection */}
         <div className="mb-8">
-          <select 
+          <select
             className="w-full max-w-md mx-auto block px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             defaultValue="Thailand"
             onChange={handleCountryChange}
           >
-            <option value="" disabled>Select Country</option>
-            {countries.map(country => (
-              <option key={country.name} value={country.name}>{country.name}</option>
+            <option value="" disabled>
+              Select Country
+            </option>
+            {countries.map((country) => (
+              <option key={country.name} value={country.name}>
+                {country.name}
+              </option>
             ))}
           </select>
         </div>
@@ -85,7 +91,10 @@ function ThailandVisa() {
                 ))}
                 <li className="border-t my-4"></li>
                 {additionalDocuments.map((doc, index) => (
-                  <li key={index} className="flex items-center gap-2 text-gray-600">
+                  <li
+                    key={index}
+                    className="flex items-center gap-2 text-gray-600"
+                  >
                     <span className="h-2 w-2 bg-yellow-500 rounded-full"></span>
                     <span>{doc}</span>
                   </li>
@@ -98,18 +107,17 @@ function ThailandVisa() {
               <h2 className="text-center bg-gray-200 p-3 rounded mb-6 font-semibold">
                 Per Person Price (Non-Refundable)
               </h2>
-              
+
               <div className="space-y-6">
                 <div>
                   <h3 className="font-semibold bg-gray-100 p-2 rounded mb-3">
                     Tourist eVisa Fee & Processing Fee
                   </h3>
                   <p className="pl-4 text-gray-700">
-                    Single Entry 90 Days Validity 59 Days Stay Thailand Tourist eVisa
+                    Single Entry 90 Days Validity 59 Days Stay Thailand Tourist
+                    eVisa
                     <br />
-                    <span className="font-semibold">
-                      Total: Tk.10,000/-
-                    </span>
+                    <span className="font-semibold">Total: Tk.10,000/-</span>
                   </p>
                 </div>
 
@@ -120,9 +128,7 @@ function ThailandVisa() {
                   <p className="pl-4 text-gray-700">
                     Single Entry 90 Days Validity 59 Days Stay Medical eVisa
                     <br />
-                    <span className="font-semibold">
-                      Total: Tk.10,000/-
-                    </span>
+                    <span className="font-semibold">Total: Tk.10,000/-</span>
                   </p>
                 </div>
               </div>
@@ -130,55 +136,7 @@ function ThailandVisa() {
           </div>
 
           {/* Contact Sidebar */}
-          <div className="space-y-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-xl font-bold text-red-600 text-center mb-4">
-                Need Assistance?
-              </h2>
-              <h3 className="text-lg text-center mb-4">Please Contact</h3>
-              
-              <div className="space-y-3">
-                <div className="text-center">
-                  <h4 className="font-semibold text-green-700 mb-2">
-                    WhatsApp / Viber / imo
-                  </h4>
-                  {[
-                    '+880197-2288-525',
-                    '+880197-2288-526',
-                    '+880197-2288-521',
-                    '+880197-2288-522',
-                    '+880197-2288-523',
-                    '+880197-2288-524'
-                  ].map((number, index) => (
-                    <div key={index} className="flex items-center justify-center gap-2">
-                      <Phone size={16} className="text-pink-600" />
-                      <span className="text-pink-600 font-semibold">{number}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="text-center pt-3">
-                  <div className="flex items-center justify-center gap-2">
-                    <Mail size={16} className="text-pink-600" />
-                    <span className="text-pink-600">visa@arnimholidays.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Tour Package Card */}
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <h3 className="font-semibold mb-3">Thailand Tour Package</h3>
-              <p className="text-gray-600 mb-3">
-                Bangkok - Pattaya - Phuket - Chiang Mai- Krabi
-              </p>
-              <img 
-                src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=300"
-                alt="Thailand Tour Package"
-                className="rounded-lg w-full h-48 object-cover"
-              />
-            </div>
-          </div>
+          <ContactSidebar />
         </div>
       </div>
     </div>
