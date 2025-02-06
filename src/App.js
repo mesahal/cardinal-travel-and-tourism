@@ -70,7 +70,7 @@ function App() {
             <Route path="/tour-packages" element={<TourPackages />} />
             <Route path="/transfer-services" element={<TransferServices />} />
             <Route path="/umrah-packages" element={<UmrahPackages />} />
-            <Route path="/visa-services" element={<VisaServices />} />
+            <Route path="/visa-service" element={<VisaServices />} />
             <Route path="/agent-login" element={<AgentLogin />} />
           </Routes>
         </div>
