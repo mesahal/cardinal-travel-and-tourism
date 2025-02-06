@@ -27,6 +27,7 @@ import UmrahPackages from "./components/UmrahPackages";
 import VisaServices from "./components/VisaServices";
 import AgentLogin from "./components/AgentLogin";
 import ContactForm from "./components/ContactForm";
+import ThailandVisa from "./components/ThailandVisa";
 
 function App() {
   return (
@@ -71,6 +72,7 @@ function App() {
             <Route path="/transfer-services" element={<TransferServices />} />
             <Route path="/umrah-packages" element={<UmrahPackages />} />
             <Route path="/visa-service" element={<VisaServices />} />
+            <Route path="/thailand-visa-service" element={<ThailandVisa />} />
             <Route path="/agent-login" element={<AgentLogin />} />
           </Routes>
         </div>
