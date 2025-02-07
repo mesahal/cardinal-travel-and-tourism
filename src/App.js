@@ -29,6 +29,7 @@ import AgentLogin from "./components/AgentLogin";
 import ContactForm from "./components/ContactForm";
 import ThailandVisa from "./components/ThailandVisa";
 import SingaporeVisa from "./components/SingaporeVisa";
+import IndonesiaVisa from "./components/IndonesiaVisa";
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
             <Route path="/visa-service" element={<VisaServices />} />
             <Route path="/thailand-visa-service" element={<ThailandVisa />} />
             <Route path="/singapore-visa-service" element={<SingaporeVisa />} />
+            <Route path="/indonesia-visa-service" element={<IndonesiaVisa />} />
             <Route path="/agent-login" element={<AgentLogin />} />
           </Routes>
         </div>
