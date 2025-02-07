@@ -1,170 +1,159 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
 
   const clientLogin = () => {
     navigate(`/agent-login`);
   };
 
+  const linkClasses = `
+    relative px-4 py-2 rounded-md transition-all duration-200
+    text-white hover:bg-white/10
+    after:content-[''] after:absolute after:bottom-0 after:left-0 
+    after:w-full after:h-0.5 after:bg-current
+    after:scale-x-0 after:origin-center after:transition-transform
+    hover:after:scale-x-100
+  `;
+
+  const dropdownClasses = `
+    absolute top-full left-0 mt-1 py-2 rounded-lg shadow-xl
+    bg-purple-600 min-w-[200px] opacity-0 invisible 
+    group-hover:opacity-100 group-hover:visible 
+    transition-all duration-200
+  `;
+
+  const dropdownItemClasses = `
+    block px-4 py-2 text-sm transition-colors duration-150
+    text-white hover:bg-white/10
+  `;
+
+  const services = [
+    { path: "/visa-service", label: "Visa Services" },
+    { path: "/air-ticket", label: "Air Ticket" },
+    { path: "/group-ticket", label: "Group Ticket" },
+    { path: "/umrah-packages", label: "Umrah Packages" },
+    { path: "/quarantine-packages", label: "Quarantine Packages" },
+    { path: "/tour-packages", label: "Tour Packages" },
+    { path: "/student-visa", label: "Student Visa" },
+    { path: "/arnim-protect", label: "Cardinal Protect" },
+    { path: "/hotel-booking", label: "Hotel Booking" },
+    { path: "/transfer-services", label: "Transfer Services" },
+    { path: "/malaysia-singapore-bus-ticket", label: "Malaysia-Singapore Bus" },
+    { path: "/ferry-services", label: "Ferry Services" },
+    { path: "/medical-tourism-to-thailand", label: "Medical Tourism" },
+  ];
+
   return (
-    <div>
-      {/* Navigation Bar */}
-      <nav className="bg-purple-500 text-white">
-        <div className="flex justify-between container mx-auto p-4 items-center">
-          <ul className="flex space-x-8 relative">
-            {/* Home */}
-            <li className="relative group">
-              <Link
-                to="/"
-                className="hover:bg-white p-2 hover:text-black cursor-pointer"
-              >
-                Home
-              </Link>
-            </li>
-
-            {/* Our Services */}
-            <li className="relative group">
-              <span className="hover:bg-white p-2 hover:text-black cursor-pointer">
+    <nav className="bg-purple-500 text-white">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center space-x-1">
+            <Link to="/" className={linkClasses}>
+              Home
+            </Link>
+            
+            {/* Services Dropdown */}
+            <div className="relative group">
+              <button className={`${linkClasses} flex items-center gap-1`}>
                 Our Services
-              </span>
-              <ul className="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg z-10 w-36">
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/visa-service">Visa Services</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/air-ticket">Air Ticket</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/group-ticket">Group Ticket</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/umrah-packages">Umrah Packages</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/quarantine-packages">Quarantine Packages</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/tour-packages">Tour Packages</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/student-visa">Student Visa</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/arnim-protect">Cardinal Protect</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/hotel-booking">Hotel Booking</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/transfer-services">Transfer Services</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/malaysia-singapore-bus-ticket">
-                    Malaysia-Singapore Bus Ticket
+                <ChevronDown size={16} className="transition-transform group-hover:rotate-180" />
+              </button>
+              <div className={dropdownClasses}>
+                {services.map((service) => (
+                  <Link
+                    key={service.path}
+                    to={service.path}
+                    className={dropdownItemClasses}
+                  >
+                    {service.label}
                   </Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/ferry-services">Ferry Services</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/medical-tourism-to-thailand">
-                    Medical Tourism to Thailand
-                  </Link>
-                </li>
-              </ul>
-            </li>
+                ))}
+              </div>
+            </div>
 
-            {/* Visa Services */}
-            <li className="relative group">
-              <Link
-                to="/visa-service"
-                className="hover:bg-white p-2 hover:text-black cursor-pointer"
-              >
-                Visa Services
-              </Link>
-            </li>
+            <Link to="/visa-service" className={linkClasses}>
+              Visa Services
+            </Link>
+            <Link to="/air-ticket" className={linkClasses}>
+              Air Ticket
+            </Link>
+            <Link to="/tour-packages" className={linkClasses}>
+              Tour Packages
+            </Link>
+            <Link to="/about-us" className={linkClasses}>
+              About Us
+            </Link>
+            <Link to="/contact-us" className={linkClasses}>
+              Contact Us
+            </Link>
+          </div>
 
-            {/* Air Ticket */}
-            <li className="relative group">
-              <Link
-                to="/air-ticket"
-                className="hover:bg-white p-2 hover:text-black cursor-pointer"
-              >
-                Air Ticket
-              </Link>
-            </li>
-
-            {/* Tour Packages */}
-            <li className="relative group">
-              <Link
-                to="/tour-packages"
-                className="hover:bg-white p-2 hover:text-black cursor-pointer"
-              >
-                Tour Packages
-              </Link>
-            </li>
-
-            {/* PSA */}
-            {/* <li className="relative group">
-              <span className="hover:bg-white p-2 hover:text-black cursor-pointer">
-                PSA
-              </span>
-              <ul className="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg z-10 w-36">
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/airasia">Air Asia</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/jetstar-air">Jetstar Air</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/nok-air">Nok Air</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/firefly">Firefly</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/spicejet">SpiceJet</Link>
-                </li>
-                <li className="px-4 py-2 hover:bg-purple-400">
-                  <Link to="/indigo-air">IndiGo Air</Link>
-                </li>
-              </ul>
-            </li> */}
-
-            {/* About Us */}
-            <li className="relative group">
-              <Link
-                to="/about-us"
-                className="hover:bg-white p-2 hover:text-black cursor-pointer"
-              >
-                About Us
-              </Link>
-            </li>
-
-            {/* Contact Us */}
-            <li className="relative group">
-              <Link
-                to="/contact-us"
-                className="hover:bg-white p-2 hover:text-black cursor-pointer"
-              >
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-          <div className="flex space-x-4">
+          {/* Login Button */}
+          <div className="hidden lg:block">
             <button
               onClick={clientLogin}
-              className="bg-green-600 px-4 py-2 rounded-md hover:bg-green-700"
+              className="bg-white text-purple-600 hover:bg-purple-50 
+                px-6 py-2 rounded-full font-medium transition-all duration-200"
+            >
+              Agent Login
+            </button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden p-2 rounded-md focus:outline-none"
+          >
+            {isOpen ? (
+              <X className="text-white" />
+            ) : (
+              <Menu className="text-white" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={`
+            lg:hidden transition-all duration-300 overflow-hidden
+            ${isOpen ? "max-h-screen pb-4" : "max-h-0"}
+          `}
+        >
+          <div className="flex flex-col space-y-2">
+            <Link to="/" className={dropdownItemClasses}>
+              Home
+            </Link>
+            {services.map((service) => (
+              <Link
+                key={service.path}
+                to={service.path}
+                className={dropdownItemClasses}
+              >
+                {service.label}
+              </Link>
+            ))}
+            <Link to="/about-us" className={dropdownItemClasses}>
+              About Us
+            </Link>
+            <Link to="/contact-us" className={dropdownItemClasses}>
+              Contact Us
+            </Link>
+            <button
+              onClick={clientLogin}
+              className="bg-white text-purple-600 hover:bg-purple-50 
+                px-6 py-2 rounded-full font-medium transition-all duration-200 mt-4"
             >
               Agent Login
             </button>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
