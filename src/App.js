@@ -28,6 +28,7 @@ import VisaServices from "./components/VisaServices";
 import AgentLogin from "./components/AgentLogin";
 import ContactForm from "./components/ContactForm";
 import ThailandVisa from "./components/ThailandVisa";
+import SingaporeVisa from "./components/SingaporeVisa";
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
             <Route path="/umrah-packages" element={<UmrahPackages />} />
             <Route path="/visa-service" element={<VisaServices />} />
             <Route path="/thailand-visa-service" element={<ThailandVisa />} />
+            <Route path="/singapore-visa-service" element={<SingaporeVisa />} />
             <Route path="/agent-login" element={<AgentLogin />} />
           </Routes>
         </div>
