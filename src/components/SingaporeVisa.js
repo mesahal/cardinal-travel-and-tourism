@@ -6,18 +6,28 @@ function SingaporeVisa() {
   const navigate = useNavigate();
 
   const countries = [
+    { name: "Malaysia-Tourist", path: "/malaysia-tourist-visa-service" },
+    { name: "Pakistan", path: "/pakistan-visa-service" },
+    { name: "Cambodia", path: "/cambodia-visa-service" },
+    { name: "Sri Lanka", path: "/sri-lanka-visa-service" },
+    { name: "Hong Kong", path: "/hong-kong-visa-service" },
+    { name: "India", path: "/india-visa-service" },
+    { name: "Nepal", path: "/nepal-visa-service" },
+    { name: "Turkey", path: "/turkey-visa-service" },
+    { name: "Netherlands", path: "/netherlands-visa-service" },
+    { name: "Ethiopia", path: "/ethiopia-visa-service" },
+    { name: "Morocco", path: "/morocco-visa-service" },
     { name: "Thailand", path: "/thailand-visa-service" },
     { name: "Singapore", path: "/singapore-visa-service" },
     { name: "Malaysia", path: "/malaysia-visa-service" },
     { name: "Japan", path: "/japan-visa-service" },
     { name: "Indonesia", path: "/indonesia-visa-service" },
     { name: "Vietnam", path: "/vietnam-visa-service" },
-    { name: "Pakistan", path: "/pakistan-visa-service" },
-    { name: "Cambodia", path: "/cambodia-visa-service" },
     { name: "UAE (Dubai)", path: "/uae-dubai-visa-service" },
     { name: "Qatar", path: "/qatar-visa-service" },
-    { name: "Saudi Arabia (KSA)", path: "/saudi-arabia-visa-service" },
+    { name: "Saudi Arabia (KSA)", path: "/saudi-arabia-visa-service" }
   ];
+  
 
   const requiredDocuments = [
     "Original Passport (valid for at least 06 months from the departure date)",  

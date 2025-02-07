@@ -2,8 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import ContactSidebar from "./ContactSidebar";
 
-function VietNamVisa() {
+function UAEVisa() {
   const navigate = useNavigate();
+
   const countries = [
     { name: "Malaysia-Tourist", path: "/malaysia-tourist-visa-service" },
     { name: "Pakistan", path: "/pakistan-visa-service" },
@@ -29,11 +30,14 @@ function VietNamVisa() {
   
 
   const requiredDocuments = [
-    "Passport Copy (valid for at least 06 months from the departure date)",  
+    "Original Passport (valid for at least 06 months from the departure date)",  
 "Recent Passport size photo with white background",  
-"Visiting Card and Previous Visited Country All Visa Copy",  
-"N.O.C / G.O / Trade License Notarized Copy",  
-"Bank Statement for the last six months & Bank Solvency Certificate",   
+"Original Bank Statement for the last 6 months (Minimum balance: USD $2000 or BDT 220,000+)",  
+"Original Bank Solvency Certificate and 1 check page",  
+"Round Trip Flight Ticket Booking (departure date minimum 30 days from the date of application)",  
+"Hotel Reservation / Booking Copy",  
+"Vaccine Certificate",  
+"Health Insurance",  
   ];
 
   const additionalDocuments = [
@@ -54,7 +58,7 @@ function VietNamVisa() {
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold text-red-600 mb-2">
-            Vietnam Visa Service From Bangladesh
+            Indonesia Visa Service From Bangladesh
           </h1>
           <p className="text-gray-600">
             Cardinal Tours and Travle Authorized Visa Submitting Agents of Royal Thai
@@ -66,7 +70,7 @@ function VietNamVisa() {
         <div className="mb-8">
           <select
             className="w-full max-w-md mx-auto block px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            defaultValue="Vietnam"
+            defaultValue="Indonesia"
             onChange={handleCountryChange}
           >
             <option value="" disabled>
@@ -120,7 +124,7 @@ function VietNamVisa() {
                     Tourist eVisa Fee & Processing Fee
                   </h3>
                   <p className="pl-4 text-gray-700">
-                    Single Entry 90 Days Validity 59 Days Stay Vietnam Tourist
+                    Single Entry 90 Days Validity 59 Days Stay Indonesia Tourist
                     eVisa
                     <br />
                     <span className="font-semibold">Total: Tk.10,000/-</span>
@@ -149,4 +153,4 @@ function VietNamVisa() {
   );
 }
 
-export default VietNamVisa;
+export default UAEVisa;

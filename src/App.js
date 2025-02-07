@@ -30,6 +30,24 @@ import ContactForm from "./components/ContactForm";
 import ThailandVisa from "./components/ThailandVisa";
 import SingaporeVisa from "./components/SingaporeVisa";
 import IndonesiaVisa from "./components/IndonesiaVisa";
+import VietNamVisa from "./components/VietnamVisa";
+import UAEVisa from "./components/UaeVisa";
+import QatarVisa from "./components/QatarVisa";
+import ChinaVisa from "./components/ChinaVisa";
+import EgyptVisa from "./components/EgyptVisa";
+import PhilippinesVisa from "./components/PhilippinesVisa";
+import SriLankaVisa from "./components/SriLankaVisa";
+import HongKongVisa from "./components/HongKongVisa";
+import IndiaVisa from "./components/IndiaVisa";
+import NepalVisa from "./components/NepalVisa";
+import TurkeyVisa from "./components/TurkeyVisa";
+import NetherlandsVisa from "./components/NetherlandsVisa";
+import EthiopiaVisa from "./components/EthiopiaVisa";
+import MoroccoVisa from "./components/MoroccoVisa";
+import MalaysiaTouristVisa from "./components/MalaysiaTouristVisa";
+import PakistanVisa from "./components/PakistanVisa";
+import CambodiaVisa from "./components/CambodiaVisa";
+
 
 function App() {
   return (
@@ -77,6 +95,23 @@ function App() {
             <Route path="/thailand-visa-service" element={<ThailandVisa />} />
             <Route path="/singapore-visa-service" element={<SingaporeVisa />} />
             <Route path="/indonesia-visa-service" element={<IndonesiaVisa />} />
+            <Route path="/vietnam-visa-service" element={<VietNamVisa />} />
+            <Route path="/uae-dubai-visa-service" element={<UAEVisa />} />
+            <Route path="/qatar-visa-service" element={<QatarVisa />} />
+            <Route path="/china-visa-service" element={<ChinaVisa />} />
+            <Route path="/egypt-visa-service" element={<EgyptVisa />} />
+            <Route path="/philippines-visa-service" element={<PhilippinesVisa />} />
+            <Route path="/sri-lanka-visa-service" element={<SriLankaVisa />} />
+            <Route path="/hong-kong-visa-service" element={<HongKongVisa />} />
+            <Route path="/india-visa-service" element={<IndiaVisa />} />
+            <Route path="/nepal-visa-service" element={<NepalVisa />} />
+            <Route path="/turkey-visa-service" element={<TurkeyVisa />} />
+            <Route path="/netherlands-visa-service" element={<NetherlandsVisa />} />
+            <Route path="/ethiopia-visa-service" element={<EthiopiaVisa />} />
+            <Route path="/morocco-visa-service" element={<MoroccoVisa />} />
+            <Route path="/malaysia-tourist-visa-service" element={<MalaysiaTouristVisa />} />
+            <Route path="/pakistan-visa-service" element={<PakistanVisa />} />
+            <Route path="/cambodia-visa-service" element={<CambodiaVisa />} />
             <Route path="/agent-login" element={<AgentLogin />} />
           </Routes>
         </div>
