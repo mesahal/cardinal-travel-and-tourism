@@ -60,8 +60,7 @@ function ThailandVisa() {
             Thailand Visa Service From Bangladesh
           </h1>
           <p className="text-gray-600">
-            Cardinal Tour & Travel Authorized Visa Submitting Agents of Royal Thai
-            Embassy in Dhaka, Bangladesh
+            Get your Thailand visa processed with ease and reliability.
           </p>
         </header>
 

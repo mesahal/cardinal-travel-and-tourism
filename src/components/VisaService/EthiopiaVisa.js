@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import ContactSidebar from "../ContactSidebar";
+import RequiredDocuments from "../VisaService/RequiredDocuments";
 
 function EthiopiaVisa() {
   const navigate = useNavigate();
@@ -37,6 +38,18 @@ function EthiopiaVisa() {
     }
   };
 
+  const requiredDocs = [
+    "Valid passport with at least 6 months validity",
+    "Recent passport-size photo",
+    "Bank statement (last 6 months)",
+    "Flight and hotel booking confirmation",
+  ];
+
+  const additionalDocs = [
+    "Invitation letter (if applicable)",
+    "Travel itinerary",
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
       <div className="max-w-7xl mx-auto">
@@ -45,7 +58,7 @@ function EthiopiaVisa() {
             Ethiopia Visa Service
           </h1>
           <p className="text-gray-600">
-            Get your Ethiopia visa processed with ease and reliability.
+            Secure your Ethiopia visa hassle-free with our expert support.
           </p>
         </header>
 
@@ -64,14 +77,12 @@ function EthiopiaVisa() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="md:col-span-2 bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-xl font-semibold mb-4">Required Documents</h2>
-            <ul className="space-y-3">
-              <li>Valid passport with at least 6 months validity</li>
-              <li>Recent passport-size photo</li>
-              <li>Bank statement (last 6 months)</li>
-              <li>Flight and hotel booking confirmation</li>
-            </ul>
+          <div className="md:col-span-2">
+            <RequiredDocuments
+              title="Required Documents"
+              requiredDocs={requiredDocs}
+              additionalDocs={additionalDocs}
+            />
           </div>
           <ContactSidebar />
         </div>

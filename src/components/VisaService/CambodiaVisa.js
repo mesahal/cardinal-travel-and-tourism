@@ -45,6 +45,11 @@ function CambodiaVisa() {
     "Flight and hotel booking confirmation",
   ];
 
+  const additionalDocs = [
+    "Invitation letter (if applicable)",
+    "Travel itinerary",
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
       <div className="max-w-7xl mx-auto">
@@ -60,9 +65,12 @@ function CambodiaVisa() {
         <div className="mb-8">
           <select
             className="w-full max-w-md mx-auto block px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            defaultValue="Cambodia"
+            defaultValue=""
             onChange={handleCountryChange}
           >
+            <option value="" disabled>
+              Select a country
+            </option>
             {countries.map((country) => (
               <option key={country.name} value={country.name}>
                 {country.name}
@@ -73,7 +81,7 @@ function CambodiaVisa() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
-            <RequiredDocuments title="Required Documents" requiredDocs={requiredDocs} />
+            <RequiredDocuments title="Required Documents" requiredDocs={requiredDocs} additionalDocs={additionalDocs} />
           </div>
           <ContactSidebar />
         </div>
