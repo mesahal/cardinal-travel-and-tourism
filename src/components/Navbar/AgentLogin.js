@@ -328,8 +328,8 @@ const AgentLogin = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-3 px-6 rounded-xl hover:from-purple-700 hover:to-indigo-700 transition duration-300 shadow-lg"
-              >
+                className="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#8e2157] to-[#ff66a3] text-white rounded-xl hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition"
+                >
                 Submit Registration
               </button>
             </form>

@@ -67,7 +67,7 @@ const AirTicket = () => {
       <div className="max-w-4xl mx-auto">
         <div className="bg-white shadow-2xl rounded-3xl overflow-hidden">
           <div className="md:flex">
-            <div className="md:w-1/3 bg-gradient-to-br from-purple-600 to-indigo-600 p-8 text-white">
+            <div className="md:w-1/3 bg-gradient-to-br from-[#8e2157] to-[#ff66a3] p-8 text-white">
               <h2 className="text-3xl font-bold mb-6">Air Ticket Form</h2>
               <p className="mb-4 text-purple-100">
                 Please fill in your details carefully. Make sure all information
@@ -246,7 +246,7 @@ const AirTicket = () => {
                 <div className="flex justify-end">
                   <button
                     type="submit"
-                    className="flex items-center justify-center px-6 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition"
+                    className="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#8e2157] to-[#ff66a3] text-white rounded-xl hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Submit
