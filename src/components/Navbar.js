@@ -32,18 +32,19 @@ const Navbar = () => {
   `;
 
   const services = [
+    { path: "/umrah-packages", label: "Umrah Packages" },
     { path: "/visa-service", label: "Visa Services" },
     { path: "/air-ticket", label: "Air Ticket" },
     { path: "/group-ticket", label: "Group Ticket" },
-    { path: "/umrah-packages", label: "Umrah Packages" },
-    { path: "/quarantine-packages", label: "Quarantine Packages" },
+    
+    // { path: "/quarantine-packages", label: "Quarantine Packages" },
     { path: "/tour-packages", label: "Tour Packages" },
     { path: "/student-visa", label: "Student Visa" },
     { path: "/arnim-protect", label: "Cardinal Protect" },
-    { path: "/hotel-booking", label: "Hotel Booking" },
-    { path: "/transfer-services", label: "Transfer Services" },
-    { path: "/malaysia-singapore-bus-ticket", label: "Malaysia-Singapore Bus" },
-    { path: "/ferry-services", label: "Ferry Services" },
+    // { path: "/hotel-booking", label: "Hotel Booking" },
+    // { path: "/transfer-services", label: "Transfer Services" },
+    // { path: "/malaysia-singapore-bus-ticket", label: "Malaysia-Singapore Bus" },
+    // { path: "/ferry-services", label: "Ferry Services" },
     { path: "/medical-tourism-to-thailand", label: "Medical Tourism" },
   ];
 
