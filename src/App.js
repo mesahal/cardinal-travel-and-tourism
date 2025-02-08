@@ -6,7 +6,7 @@ import AboutUs from "./components/Navbar/AboutUs";
 import AirAsia from "./components/Unused/AirAsia";
 import AirTicket from "./components/Navbar/AirTicket";
 import ArnimProtect from "./components/Unused/ArnimProtect";
-import ContactUs from "./components/Unused/ContactUs";
+import "@fontsource/noto-sans";
 import FerryServices from "./components/Unused/FerryServices";
 import Firefly from "./components/Unused/Firefly";
 import GroupTicket from "./components/OurService/GroupTicket";
