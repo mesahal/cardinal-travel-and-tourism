@@ -95,7 +95,7 @@ const Navbar = () => {
               className="bg-white text-[#8E2157] hover:bg-purple-50 
                 px-6 py-2 rounded-full font-medium transition-all duration-200"
             >
-              Agent Login
+              Agent Registration
             </button>
           </div>
 
