@@ -11,52 +11,44 @@ import {
 
 const packages = [
   {
-    title: "Standard Blessed Journey",
-    price: "Contact for Price",
-    highlights: [
-      "Luxury hotel stay in Makkah near Haram",
-      "Luxury hotel stay in Madinah near Masjid Nabawi",
-      "Return flights included",
-      "All transportation between cities",
-      "Guided Ziyarat tours",
-      "Experienced religious guide",
-      "Full-board dining at hotel restaurants",
-      "Daily breakfast and dinner buffets",
-      "Complimentary packed lunch during tours",
-    ],
-  },
-  {
     title: "Premium Package",
     price: "Contact for Price",
     highlights: [
-      "Extended stay in Makkah (5-star luxury hotel)",
-      "Extended stay in Madinah (5-star luxury hotel)",
+      "Extended stay in luxury hotels",
       "Business class flights",
       "VIP transportation",
-      "Extended Ziyarat tours",
+      "Extended tours",
       "24/7 dedicated support",
-      "Premium dining experience at specialty restaurants",
-      "All-inclusive meals with room service option",
-      "Special dietary accommodations",
-      "Exclusive access to VIP dining lounges",
+      "Premium services and facilities",
+      "Inclusive dining options",
     ],
   },
   {
-    title: "Economy Blessed Package",
+    title: "Standard Package",
     price: "Contact for Price",
     highlights: [
-      "Comfortable hotel stay in Makkah (3-star hotel)",
-      "Comfortable hotel stay in Madinah (3-star hotel)",
+      "Hotel stay in a prime location",
+      "Return flights included",
+      "All transportation between cities",
+      "Guided tours",
+      "Experienced guide",
+      "Comfortable accommodation",
+      "Inclusive dining options",
+    ],
+  },
+  {
+    title: "Economy Package",
+    price: "Contact for Price",
+    highlights: [
+      "Comfortable hotel stay",
       "Economy class flights",
       "Standard transportation between cities",
-      "Essential Ziyarat tours",
-      "Group religious guidance",
-      "Half-board meal plan included",
-      "Breakfast and dinner at hotel restaurant",
-      "Prayer time snacks provided",
+      "Essential tours",
+      "Group guidance",
     ],
   },
 ];
+
 
 const UmrahPackages = () => {
   return (
@@ -151,7 +143,9 @@ const UmrahPackages = () => {
               >
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">{pkg.title}</h3>
-                  <div className="text-xl text-green-600 mb-6">{pkg.price}</div>
+                  <div className="text-xl mb-6" style={{ color: '#8e2157' }}>{pkg.price}
+                 </div>
+
                   <ul className="space-y-3">
                     {pkg.highlights.map((highlight, i) => (
                       <li key={i} className="flex items-center">

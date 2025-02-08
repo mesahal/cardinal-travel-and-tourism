@@ -27,11 +27,11 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-600 leading-relaxed">
-                Cardinal Tour & Travel is a premier tour operator based in Bangladesh, established on December 19, 2013. As a Bangladesh Government-approved travel agency (Business License No: 02039064, Ministry of Civil Aviation and Tourism Certificate No: 0000859), we take pride in delivering exceptional travel experiences.
-              </p>
+              Cardinal Tour & Travel, a prominent wing of the Cardinal Group, is a dedicated travel agent and career consultant connecting our people to the global community. Building on our group's experience since 1991, Cardinal Tour & Travel is driven by a commitment to excellence. </p>
               <p className="text-gray-600 leading-relaxed mt-4">
-                Under the leadership of our founder Anisur Rahman, we've grown into one of Bangladesh's leading travel and tourism companies. Our membership in prestigious organizations including ATAB, TOAB, PATA, and CLIA reflects our commitment to industry excellence.
-              </p>
+              We help transform unskilled and semi-skilled workers into valuable global resources through education and on-the-job training, setting them to international standards. In addition to leisure trips, we also arrange corporate tours for knowledge sharing and skill exchange with the global market.</p>
+              <p className="text-gray-600 leading-relaxed mt-4">
+              Our dedicated team provides customized, cost-effective services through a one-stop platform for career exploration and immigration, including corporate tours, Umrah and Hajj packages, holiday packages, visa processing, hotel bookings, ticketing, and more, ensuring the satisfaction of our valued stakeholders.</p>
             </div>
             <div>
               <img 
@@ -128,7 +128,7 @@ const AboutUs = () => {
               },
               {
                 icon: <Users2 className="w-8 h-8 text-blue-600" />,
-                title: "24/7 Support",
+                title: "Strong Support System",
                 description: "Round-the-clock assistance throughout your journey."
               }
             ].map((item, index) => (

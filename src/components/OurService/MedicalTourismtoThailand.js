@@ -61,7 +61,7 @@ const MedicalTourismtoThailand = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20" />
         <div className="relative h-full flex flex-col items-center justify-center text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Medical Tourism in Asia & Europe</h1>
-          <p className="text-xl md:text-2xl text-center max-w-2xl">World-class healthcare combined with luxury recovery in tropical paradise</p>
+          <p className="text-xl md:text-2xl text-center max-w-2xl">World-class healthcare combined with luxury recovery </p>
         </div>
       </div>
 
