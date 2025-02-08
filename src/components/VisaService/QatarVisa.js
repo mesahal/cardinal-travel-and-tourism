@@ -58,8 +58,7 @@ function QatarVisa() {
             Qatar Visa Service From Bangladesh
           </h1>
           <p className="text-gray-600">
-            Cardinal Tours and Travle Authorized Visa Submitting Agents of Royal
-            Thai Embassy in Dhaka, Bangladesh
+            Get your Qatar visa processed with ease and reliability.
           </p>
         </header>
 
@@ -87,7 +86,7 @@ function QatarVisa() {
             {/* Required Documents */}
             <div className="bg-white rounded-lg shadow-md p-6 mb-6">
               <h2 className="text-xl font-semibold mb-4 bg-gray-100 p-3 rounded">
-                Documents Required for Thai eVisa
+                Documents Required for Qatar Visa
               </h2>
               <ul className="space-y-3">
                 {requiredDocuments.map((doc, index) => (
