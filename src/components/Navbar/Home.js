@@ -224,7 +224,7 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
-              <div className="p-6">
+              <div className="p-6 mt-8">
                 <div className="flex items-center justify-center -mt-12 mb-4">
                   <div className="p-3 bg-white rounded-full shadow-md">
                     {service.icon}

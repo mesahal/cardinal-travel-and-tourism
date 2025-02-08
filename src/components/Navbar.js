@@ -59,7 +59,7 @@ const Navbar = () => {
             </Link>
             
             {/* Services Dropdown */}
-            <div className="relative group">
+            <div className="relative group z-50">
               <button className={`${linkClasses} flex items-center gap-1`}>
                 Our Services
                 <ChevronDown size={16} className="transition-transform group-hover:rotate-180" />

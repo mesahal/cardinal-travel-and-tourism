@@ -19,13 +19,17 @@ const Header = () => {
               <h1 className="text-xl font-bold text-green-700">
                 CARDINAL TOUR & TRAVEL
               </h1>
-              <p className="text-sm text-gray-600 italic">Fly your best with us</p>
+              <p className="text-sm text-gray-600 italic">
+                Fly your best with us
+              </p>
             </div>
           </div>
 
           {/* Contact Information */}
           <div className="text-center">
-            <h2 className="text-lg font-semibold text-purple-600 mb-2">Customer Service</h2>
+            <h2 className="text-lg font-semibold text-purple-600 mb-2">
+              Customer Service
+            </h2>
             <div className="space-y-1">
               <p className="flex items-center justify-center gap-2">
                 <Phone size={16} className="text-purple-600" />
@@ -39,13 +43,22 @@ const Header = () => {
           {/* Social Media Links */}
           <div className="flex flex-col items-end space-y-2">
             <div className="flex space-x-4">
-              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+              <a
+                href="https://www.facebook.com/people/Cardinal-Tour-And-Travel/61559996273281/?rdid=Haw3N07SO5P77bRm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15y3m7cqYM%2F" target="_blank"
+                className="text-purple-600 hover:text-purple-800 transition-colors"
+              >
                 <Facebook size={24} />
               </a>
-              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+              <a
+                href="#"
+                className="text-purple-600 hover:text-purple-800 transition-colors"
+              >
                 <Twitter size={24} />
               </a>
-              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+              <a
+                href="#"
+                className="text-purple-600 hover:text-purple-800 transition-colors"
+              >
                 <Instagram size={24} />
               </a>
             </div>

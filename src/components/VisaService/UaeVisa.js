@@ -1,48 +1,45 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ContactSidebar from "./ContactSidebar";
+import ContactSidebar from "../ContactSidebar";
 
-function IndonesiaVisa() {
+function UAEVisa() {
   const navigate = useNavigate();
 
   const countries = [
-    { name: "Malaysia-Tourist", path: "/malaysia-tourist-visa-service" },
-    { name: "Pakistan", path: "/pakistan-visa-service" },
     { name: "Cambodia", path: "/cambodia-visa-service" },
-    { name: "Sri Lanka", path: "/sri-lanka-visa-service" },
+    { name: "China", path: "/china-visa-service" },
+    { name: "Egypt", path: "/egypt-visa-service" },
+    { name: "Ethiopia", path: "/ethiopia-visa-service" },
     { name: "Hong Kong", path: "/hong-kong-visa-service" },
     { name: "India", path: "/india-visa-service" },
-    { name: "Nepal", path: "/nepal-visa-service" },
-    { name: "Turkey", path: "/turkey-visa-service" },
-    { name: "Netherlands", path: "/netherlands-visa-service" },
-    { name: "Ethiopia", path: "/ethiopia-visa-service" },
-    { name: "Morocco", path: "/morocco-visa-service" },
-    { name: "Thailand", path: "/thailand-visa-service" },
-    { name: "Singapore", path: "/singapore-visa-service" },
-    { name: "Malaysia", path: "/malaysia-visa-service" },
-    { name: "Japan", path: "/japan-visa-service" },
     { name: "Indonesia", path: "/indonesia-visa-service" },
-    { name: "Vietnam", path: "/vietnam-visa-service" },
-    { name: "UAE (Dubai)", path: "/uae-dubai-visa-service" },
+    { name: "Malaysia-Tourist", path: "/malaysia-tourist-visa-service" },
+    { name: "Morocco", path: "/morocco-visa-service" },
+    { name: "Nepal", path: "/nepal-visa-service" },
+    { name: "Netherlands", path: "/netherlands-visa-service" },
+    { name: "Pakistan", path: "/pakistan-visa-service" },
+    { name: "Philippines", path: "/philippines-visa-service" },
     { name: "Qatar", path: "/qatar-visa-service" },
-    { name: "Saudi Arabia (KSA)", path: "/saudi-arabia-visa-service" }
+    { name: "Singapore", path: "/singapore-visa-service" },
+    { name: "Sri Lanka", path: "/sri-lanka-visa-service" },
+    { name: "Thailand", path: "/thailand-visa-service" },
+    { name: "Turkey", path: "/turkey-visa-service" },
+    { name: "UAE (Dubai)", path: "/uae-dubai-visa-service" },
+    { name: "Vietnam", path: "/vietnam-visa-service" },
   ];
-  
 
   const requiredDocuments = [
-    "Original Passport (valid for at least 06 months from the departure date)",  
-"Recent Passport size photo with white background",  
-"Original Bank Statement for the last 6 months (Minimum balance: USD $2000 or BDT 220,000+)",  
-"Original Bank Solvency Certificate and 1 check page",  
-"Round Trip Flight Ticket Booking (departure date minimum 30 days from the date of application)",  
-"Hotel Reservation / Booking Copy",  
-"Vaccine Certificate",  
-"Health Insurance",  
+    "Original Passport (valid for at least 06 months from the departure date)",
+    "Recent Passport size photo with white background",
+    "Original Bank Statement for the last 6 months (Minimum balance: USD $2000 or BDT 220,000+)",
+    "Original Bank Solvency Certificate and 1 check page",
+    "Round Trip Flight Ticket Booking (departure date minimum 30 days from the date of application)",
+    "Hotel Reservation / Booking Copy",
+    "Vaccine Certificate",
+    "Health Insurance",
   ];
 
-  const additionalDocuments = [
-    
-  ];
+  const additionalDocuments = [];
 
   const handleCountryChange = (event) => {
     const selectedPath = countries.find(
@@ -58,11 +55,11 @@ function IndonesiaVisa() {
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold text-red-600 mb-2">
-            Indonesia Visa Service From Bangladesh
+            UAE Visa Service From Bangladesh
           </h1>
           <p className="text-gray-600">
-            Cardinal Tours and Travle Authorized Visa Submitting Agents of Royal Thai
-            Embassy in Dhaka, Bangladesh
+            Cardinal Tours and Travle Authorized Visa Submitting Agents of Royal
+            Thai Embassy in Dhaka, Bangladesh
           </p>
         </header>
 
@@ -70,7 +67,7 @@ function IndonesiaVisa() {
         <div className="mb-8">
           <select
             className="w-full max-w-md mx-auto block px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            defaultValue="Indonesia"
+            defaultValue="UAE (Dubai)"
             onChange={handleCountryChange}
           >
             <option value="" disabled>
@@ -153,4 +150,4 @@ function IndonesiaVisa() {
   );
 }
 
-export default IndonesiaVisa;
+export default UAEVisa;

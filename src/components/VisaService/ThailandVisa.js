@@ -1,45 +1,39 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ContactSidebar from "./ContactSidebar";
+import ContactSidebar from "../ContactSidebar";
 
-function SingaporeVisa() {
+function ThailandVisa() {
   const navigate = useNavigate();
 
   const countries = [
-    { name: "Malaysia-Tourist", path: "/malaysia-tourist-visa-service" },
-    { name: "Pakistan", path: "/pakistan-visa-service" },
     { name: "Cambodia", path: "/cambodia-visa-service" },
-    { name: "Sri Lanka", path: "/sri-lanka-visa-service" },
+    { name: "China", path: "/china-visa-service" },
+    { name: "Egypt", path: "/egypt-visa-service" },
+    { name: "Ethiopia", path: "/ethiopia-visa-service" },
     { name: "Hong Kong", path: "/hong-kong-visa-service" },
     { name: "India", path: "/india-visa-service" },
-    { name: "Nepal", path: "/nepal-visa-service" },
-    { name: "Turkey", path: "/turkey-visa-service" },
-    { name: "Netherlands", path: "/netherlands-visa-service" },
-    { name: "Ethiopia", path: "/ethiopia-visa-service" },
-    { name: "Morocco", path: "/morocco-visa-service" },
-    { name: "Thailand", path: "/thailand-visa-service" },
-    { name: "Singapore", path: "/singapore-visa-service" },
-    { name: "Malaysia", path: "/malaysia-visa-service" },
-    { name: "Japan", path: "/japan-visa-service" },
     { name: "Indonesia", path: "/indonesia-visa-service" },
-    { name: "Vietnam", path: "/vietnam-visa-service" },
-    { name: "UAE (Dubai)", path: "/uae-dubai-visa-service" },
+    { name: "Malaysia-Tourist", path: "/malaysia-tourist-visa-service" },
+    { name: "Morocco", path: "/morocco-visa-service" },
+    { name: "Nepal", path: "/nepal-visa-service" },
+    { name: "Netherlands", path: "/netherlands-visa-service" },
+    { name: "Pakistan", path: "/pakistan-visa-service" },
+    { name: "Philippines", path: "/philippines-visa-service" },
     { name: "Qatar", path: "/qatar-visa-service" },
-    { name: "Saudi Arabia (KSA)", path: "/saudi-arabia-visa-service" }
+    { name: "Singapore", path: "/singapore-visa-service" },
+    { name: "Sri Lanka", path: "/sri-lanka-visa-service" },
+    { name: "Thailand", path: "/thailand-visa-service" },
+    { name: "Turkey", path: "/turkey-visa-service" },
+    { name: "UAE (Dubai)", path: "/uae-dubai-visa-service" },
+    { name: "Vietnam", path: "/vietnam-visa-service" },
   ];
-  
 
   const requiredDocuments = [
-    "Original Passport (valid for at least 06 months from the departure date)",  
-"Recent 3.5 cm x 4.5 cm size photo with white background (Mat Paper) 2 copies",  
-"Visiting Card & National ID Card",  
-"N.O.C / G.O / Trade License Notarized Copy with English translation & Letterhead Pad",  
-"Original Bank Statement for the last six months (Minimum balance: BDT 100,000)",  
-"Bank Solvency Certificate",  
-"Student ID Card (if a child is traveling with a parent)",  
-"Birth Certificate (for an infant traveling with a parent)",  
-"Marriage Certificate (only for newly married couples)",  
-"Letter of Introduction (L.O.I.) / Invitation with Tourist Voucher and Hotel Booking",  
+    "Passport Biodata page scan copy",
+    "Recent 3.5 cm x 4.5 cm size Photo with white background scan copy",
+    "Visiting Card & NID",
+    "Bank Statement for last six months & Bank Solvency Certificate",
+    "Document indicating current location (If Stay Outside of Bangladesh)",
   ];
 
   const additionalDocuments = [
@@ -63,10 +57,10 @@ function SingaporeVisa() {
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold text-red-600 mb-2">
-            Singapore Visa Service From Bangladesh
+            Thailand Visa Service From Bangladesh
           </h1>
           <p className="text-gray-600">
-            Cardinal Travel Authorized Visa Submitting Agents of Royal Thai
+            Arnim Holidays Authorized Visa Submitting Agents of Royal Thai
             Embassy in Dhaka, Bangladesh
           </p>
         </header>
@@ -75,7 +69,7 @@ function SingaporeVisa() {
         <div className="mb-8">
           <select
             className="w-full max-w-md mx-auto block px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            defaultValue="Singapore"
+            defaultValue="Thailand"
             onChange={handleCountryChange}
           >
             <option value="" disabled>
@@ -158,4 +152,4 @@ function SingaporeVisa() {
   );
 }
 
-export default SingaporeVisa;
+export default ThailandVisa;
