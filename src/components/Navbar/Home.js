@@ -131,13 +131,13 @@ const services = [
   {
     icon: <Shield className="w-8 h-8 text-blue-600" />,
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=60",
-    title: "Travel Protection",
-    description: "Comprehensive travel insurance for peace of mind",
+    title: "Tour Package",
+    description: "Delightful Tour Package for enjoyment",
   },
   {
     icon: <GraduationCap className="w-8 h-8 text-blue-600" />,
     image: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?w=800&auto=format&fit=crop&q=60",
-    title: "Student Services",
+    title: "Student Consultancy",
     description: "Complete support for international education aspirants",
   },
 ];
