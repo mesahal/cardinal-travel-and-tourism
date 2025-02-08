@@ -4,6 +4,7 @@ import { Send, User, Phone, Flag, Calendar, BadgeCheck } from "lucide-react";
 
 const AirTicket = () => {
   const [formData, setFormData] = useState({
+    title: "",
     firstName: "",
     lastName: "",
     nationality: "",
@@ -47,6 +48,7 @@ const AirTicket = () => {
       .then(() => {
         alert("Registration submitted successfully!");
         setFormData({
+          title: "",
           firstName: "",
           lastName: "",
           nationality: "",
@@ -73,16 +75,6 @@ const AirTicket = () => {
                 Please fill in your details carefully. Make sure all information
                 matches your passport.
               </p>
-              {/* <div className="space-y-4 mt-8">
-                <div className="flex items-center space-x-4">
-                  <BadgeCheck className="w-5 h-5 text-purple-200" />
-                  <span>Valid passport required</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Calendar className="w-5 h-5 text-purple-200" />
-                  <span>Select your travel dates</span>
-                </div>
-              </div> */}
             </div>
 
             <div className="md:w-2/3 p-8">
@@ -90,8 +82,24 @@ const AirTicket = () => {
                 Personal Information
               </h3>
               <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="relative">
+                    <label className="font-semibold text-gray-800">Title</label>
+                    <select
+                      name="title"
+                      value={formData.title}
+                      onChange={handleChange}
+                      className="w-full px-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                      required
+                    >
+                      <option value="">Select Title</option>
+                      <option value="Mr">Mr</option>
+                      <option value="Mrs">Mrs</option>
+                      <option value="Ms">Ms</option>
+                    </select>
+                  </div>
+
+                  <div className="relative md:col-span-2">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                       <User className="h-5 w-5 text-gray-400" />
                     </div>
@@ -108,25 +116,27 @@ const AirTicket = () => {
                       required
                     />
                   </div>
+                </div>
 
-                  <div className="relative">
-                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <User className="h-5 w-5 text-gray-400" />
-                    </div>
-                    <label className="font-semibold text-gray-800">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      name="lastName"
-                      placeholder="Last Name"
-                      className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      required
-                    />
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <User className="h-5 w-5 text-gray-400" />
                   </div>
+                  <label className="font-semibold text-gray-800">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
 
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                       <Flag className="h-5 w-5 text-gray-400" />

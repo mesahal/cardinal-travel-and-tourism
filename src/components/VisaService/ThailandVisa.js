@@ -60,7 +60,7 @@ function ThailandVisa() {
             Thailand Visa Service From Bangladesh
           </h1>
           <p className="text-gray-600">
-            Arnim Holidays Authorized Visa Submitting Agents of Royal Thai
+            Cardinal Tour & Travel Authorized Visa Submitting Agents of Royal Thai
             Embassy in Dhaka, Bangladesh
           </p>
         </header>

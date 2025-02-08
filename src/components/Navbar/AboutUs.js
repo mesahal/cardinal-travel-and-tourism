@@ -1,6 +1,7 @@
 import React from 'react';
 import { Plane, Award, Globe2, Users2, Phone, Building2, Briefcase, MapPin } from 'lucide-react';
 
+
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -49,32 +50,32 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[ 
               {
-                icon: <Plane className="w-8 h-8 text-blue-600" />,
+                icon: <Plane className="w-8 h-8 text-[#8e2157]" />,
                 title: "Tour Packages",
                 description: "Customized tours to Thailand, Malaysia, Singapore, Dubai, Nepal, Bhutan, India, Sri Lanka, Maldives, and Bangladesh."
               },
               {
-                icon: <Building2 className="w-8 h-8 text-blue-600" />,
+                icon: <Building2 className="w-8 h-8 text-[#8e2157]" />,
                 title: "Air Ticketing",
                 description: "PSA for AirAsia, Jetstar, Scoot, Tiger Airways, Firefly, and IndiGo Air."
               },
               {
-                icon: <Briefcase className="w-8 h-8 text-blue-600" />,
+                icon: <Briefcase className="w-8 h-8 text-[#8e2157]" />,
                 title: "Visa Assistance",
                 description: "Seamless visa processing for multiple destinations including Thailand, Singapore, Malaysia, and more."
               },
               {
-                icon: <MapPin className="w-8 h-8 text-blue-600" />,
+                icon: <MapPin className="w-8 h-8 text-[#8e2157]" />,
                 title: "Hotel Reservations",
                 description: "Worldwide hotel bookings across all categories from budget to luxury accommodations."
               },
               {
-                icon: <Users2 className="w-8 h-8 text-blue-600" />,
+                icon: <Users2 className="w-8 h-8 text-[#8e2157]" />,
                 title: "Corporate Travel",
                 description: "Specialized solutions for business travel, corporate events, and incentive tours."
               },
               {
-                icon: <Globe2 className="w-8 h-8 text-blue-600" />,
+                icon: <Globe2 className="w-8 h-8 text-[#8e2157]" />,
                 title: "Transport Services",
                 description: "Airport transfers and bus ticketing services for Singapore and Malaysia."
               }
@@ -91,21 +92,29 @@ const AboutUs = () => {
         {/* Sister Concerns */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Our Sister Concerns</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid md:grid-cols-2 gap-8">
             {[ 
-              "Cardinal Fashion", 
-              "Cardinal Aviation", 
-              "Cardinal Express", 
-              "Cardinal Holidays", 
-              "Cardinal eShop", 
-              "Cardinal Export", 
-              "Cardinal Checkout", 
-              "Cardinal Tel", 
-              "Cardinal Gift", 
-              "Cardinal IT"
+              {
+                name: "Cardinal Fashion",
+                description: "Premium fashion retail and export solutions",
+                image: "/images/Alhera.png"
+              },
+              {
+                name: "Cardinal Aviation",
+                description: "Professional aviation and travel services",
+                image: "/images/Cardinal Tradecom.png"
+              }
             ].map((company, index) => (
-              <div key={index} className="bg-blue-50 p-4 rounded-lg text-center">
-                <span className="text-blue-600 font-medium">{company}</span>
+              <div key={index} className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={company.image} 
+                  alt={company.name}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-[#8e2157] mb-2">{company.name}</h3>
+                  <p className="text-gray-600">{company.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -117,17 +126,17 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[ 
               {
-                icon: <Award className="w-8 h-8 text-blue-600" />,
+                icon: <Award className="w-8 h-8 text-[#8e2157]" />,
                 title: "Government Approved",
                 description: "Licensed and certified by Bangladesh Government and international travel associations."
               },
               {
-                icon: <Globe2 className="w-8 h-8 text-blue-600" />,
+                icon: <Globe2 className="w-8 h-8 text-[#8e2157]" />,
                 title: "Global Network",
                 description: "Strong partnerships with airlines, hotels, and travel operators worldwide."
               },
               {
-                icon: <Users2 className="w-8 h-8 text-blue-600" />,
+                icon: <Users2 className="w-8 h-8 text-[#8e2157]" />,
                 title: "Strong Support System",
                 description: "Round-the-clock assistance throughout your journey."
               }
@@ -146,11 +155,6 @@ const AboutUs = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Start Your Journey Today</h2>
           <p className="text-gray-600 mb-6">Contact us to plan your perfect travel experience</p>
           <div className="flex items-center justify-center space-x-4">
-            {/* <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/6/69/WhatsApp.svg" 
-              alt="WhatsApp Logo" 
-              className="w-6 h-6" 
-            /> */}
             <a
               href="https://wa.me/+8801813279398"
               target="_blank"

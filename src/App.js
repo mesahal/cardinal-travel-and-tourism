@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import AboutUs from "./components/Navbar/AboutUs";
 import AirAsia from "./components/Unused/AirAsia";
 import AirTicket from "./components/Navbar/AirTicket";
-import ArnimProtect from "./components/Unused/ArnimProtect";
 import "@fontsource/noto-sans";
 import FerryServices from "./components/Unused/FerryServices";
 import Firefly from "./components/Unused/Firefly";
@@ -64,7 +63,6 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/airasia" element={<AirAsia />} />
             <Route path="/air-ticket" element={<AirTicket />} />
-            <Route path="/arnim-protect" element={<ArnimProtect />} />
             <Route path="/contact-us" element={<ContactForm />} />
             <Route path="/ferry-services" element={<FerryServices />} />
             <Route path="/firefly" element={<Firefly />} />

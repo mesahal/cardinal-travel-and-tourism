@@ -171,6 +171,21 @@ const UmrahPackages = () => {
           <p className="text-gray-600 mb-8">
             Our travel experts are here to help you plan your spiritual journey
           </p>
+          <div className="flex items-center justify-center space-x-4">
+            {/* <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/6/69/WhatsApp.svg" 
+              alt="WhatsApp Logo" 
+              className="w-6 h-6" 
+            /> */}
+            <a
+              href="https://wa.me/+8801897619789"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-semibold text-green-600 hover:text-green-800"
+            >
+              Chat with Our Travel Experts on WhatsApp
+            </a>
+          </div>
           {/* <button className="bg-green-600 text-white py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300">
             Contact Us
           </button> */}
