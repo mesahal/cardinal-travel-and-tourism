@@ -1,12 +1,3 @@
-// import React from 'react'
-
-// const AboutUs = () => {
-//   return (
-//     <div>AboutUs</div>
-//   )
-// }
-
-// export default AboutUs
 import React from 'react';
 import { Plane, Award, Globe2, Users2, Phone, Building2, Briefcase, MapPin } from 'lucide-react';
 
@@ -56,7 +47,7 @@ const AboutUs = () => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Our Services</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
+            {[ 
               {
                 icon: <Plane className="w-8 h-8 text-blue-600" />,
                 title: "Tour Packages",
@@ -101,16 +92,16 @@ const AboutUs = () => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Our Sister Concerns</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {[
-              "Cardinal Fashion",
-              "Cardinal Aviation",
-              "Cardinal Express",
-              "Cardinal Holidays",
-              "Cardinal eShop",
-              "Cardinal Export",
-              "Cardinal Checkout",
-              "Cardinal Tel",
-              "Cardinal Gift",
+            {[ 
+              "Cardinal Fashion", 
+              "Cardinal Aviation", 
+              "Cardinal Express", 
+              "Cardinal Holidays", 
+              "Cardinal eShop", 
+              "Cardinal Export", 
+              "Cardinal Checkout", 
+              "Cardinal Tel", 
+              "Cardinal Gift", 
               "Cardinal IT"
             ].map((company, index) => (
               <div key={index} className="bg-blue-50 p-4 rounded-lg text-center">
@@ -124,7 +115,7 @@ const AboutUs = () => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Why Choose Us</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
+            {[ 
               {
                 icon: <Award className="w-8 h-8 text-blue-600" />,
                 title: "Government Approved",
@@ -151,12 +142,23 @@ const AboutUs = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-blue-50 rounded-lg p-8 text-center">
+        <div className="bg-gray-50 rounded-lg p-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Start Your Journey Today</h2>
           <p className="text-gray-600 mb-6">Contact us to plan your perfect travel experience</p>
           <div className="flex items-center justify-center space-x-4">
-            <Phone className="w-5 h-5 text-blue-600" />
-            <span className="text-lg font-semibold text-blue-600">Contact Our Travel Experts</span>
+            {/* <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/6/69/WhatsApp.svg" 
+              alt="WhatsApp Logo" 
+              className="w-6 h-6" 
+            /> */}
+            <a
+              href="https://wa.me/+8801813279398"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-semibold text-green-600 hover:text-green-800"
+            >
+              Chat with Our Travel Experts on WhatsApp
+            </a>
           </div>
         </div>
       </div>

@@ -259,7 +259,7 @@ const Home = () => {
                 key={index}
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
               >
-                <h3 className="text-xl font-semibold text-blue-600 mb-4">
+                <h3 className="text-xl font-semibold text-[#885f65] mb-4">
                   {location.country} Office
                 </h3>
                 <div className="space-y-2">

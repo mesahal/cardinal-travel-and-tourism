@@ -38,7 +38,7 @@ const Navbar = () => {
     { path: "/group-ticket", label: "Group Ticket" },
     { path: "/tour-packages", label: "Tour Packages" },
     { path: "/student-visa", label: "Student Consultency" },
-    { path: "/arnim-protect", label: "Cardinal Protect" },
+    { path: "/recruitment-services", label: "Recruitment Services" },
     { path: "/medical-tourism-to-thailand", label: "Medical Tourism" },
   ];
 

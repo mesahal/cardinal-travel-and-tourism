@@ -35,10 +35,10 @@ const Header = () => {
             <div className="space-y-1">
               <p className="flex items-center justify-center gap-2">
                 <Phone size={16} className="text-[#8e2157]" />
-                <span className="text-black font-medium">01897619789</span>
+                <span className="text-black font-medium">+8801897619789</span>
               </p>
-              <p className="text-black font-bold">Tickets: 01897619790</p>
-              <p className="text-black font-bold">Visa & Tour: 01897619791</p>
+              <p className="text-black font-bold">Tickets: +8801897619794</p>
+              <p className="text-black font-bold">Visa & Tour: +8801897619791</p>
             </div>
           </div>
 
