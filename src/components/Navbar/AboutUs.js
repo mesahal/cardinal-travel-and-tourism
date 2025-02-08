@@ -95,13 +95,13 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {[ 
               {
-                name: "Cardinal Fashion",
-                description: "Premium fashion retail and export solutions",
+                name: "ALHERA HARVEST",
+                description: "Agricultural and food processing company",
                 image: "/images/Alhera.png"
               },
               {
-                name: "Cardinal Aviation",
-                description: "Professional aviation and travel services",
+                name: "CARDINAL TRADECOM LTD.",
+                description: "Import and export company",
                 image: "/images/Cardinal Tradecom.png"
               }
             ].map((company, index) => (

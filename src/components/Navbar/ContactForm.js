@@ -123,7 +123,7 @@ const ContactForm = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#8e2157] to-[#ff66a3] text-white font-semibold py-3 px-6 rounded-xl hover:from-purple-700 hover:to-indigo-700 transition duration-300 shadow-lg flex items-center justify-center space-x-2"
+                  className="w-full bg-gradient-to-r from-[#8e2157] to-[#ff66a3] text-white font-semibold py-3 px-6 rounded-xl transition duration-300 shadow-lg flex items-center justify-center space-x-2"
                 >
                   <span>Send Message</span>
                   <Send className="w-5 h-5" />
