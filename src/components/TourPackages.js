@@ -196,7 +196,7 @@ const TourPackages = () => {
               {
                 image: "https://images.unsplash.com/photo-1565967511849-76a60a516170?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
                 title: "Maldives",
-                description: "Discover paradise in luxurious overwater villas"
+                description: "Discover happiness in luxurious overwater villas"
               },
               {
                 image: "https://images.unsplash.com/photo-1602642977157-b7c8b8003afd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80",
