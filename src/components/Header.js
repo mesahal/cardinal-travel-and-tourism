@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.jpg";
 import { Facebook, Twitter, Instagram, Phone } from "lucide-react";
+import { AiOutlineWhatsApp } from "react-icons/ai"; // ✅ WhatsApp icon
 
 const Header = () => {
   return (
@@ -44,7 +45,8 @@ const Header = () => {
           <div className="flex flex-col items-end space-y-2">
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/people/Cardinal-Tour-And-Travel/61559996273281/?rdid=Haw3N07SO5P77bRm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15y3m7cqYM%2F" target="_blank"
+                href="https://www.facebook.com/people/Cardinal-Tour-And-Travel/61559996273281/?rdid=Haw3N07SO5P77bRm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15y3m7cqYM%2F"
+                target="_blank"
                 className="text-purple-600 hover:text-purple-800 transition-colors"
               >
                 <Facebook size={24} />
@@ -60,6 +62,14 @@ const Header = () => {
                 className="text-purple-600 hover:text-purple-800 transition-colors"
               >
                 <Instagram size={24} />
+              </a>
+              {/* WhatsApp Link */}
+              <a
+                href="https://wa.me/01813279398"
+                target="_blank"
+                className="text-green-600 hover:text-green-800 transition-colors"
+              >
+                <AiOutlineWhatsApp size={24} />
               </a>
             </div>
             <p className="text-sm text-gray-600">Follow us on social media</p>
