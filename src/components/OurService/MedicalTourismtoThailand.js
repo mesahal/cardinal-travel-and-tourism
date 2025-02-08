@@ -19,8 +19,32 @@ const procedures = [
       "Experienced medical specialists",
       "Comprehensive care packages"
     ]
+  },
+  {
+    title: "Specialized Medical Care",
+    highlights: [
+      "Cutting-edge surgical procedures",
+      "Highly skilled specialists",
+      "Tailored treatment plans",
+      "Advanced rehabilitation programs"
+    ]
   }
 ];
+
+// Function to display data side by side
+function displayProceduresSideBySide(procedures) {
+  const maxHighlights = Math.max(...procedures.map(p => p.highlights.length));
+
+  console.log("| " + procedures.map(p => `**${p.title}**`).join(" | ") + " |");
+  console.log("|" + procedures.map(() => "---").join("|") + "|");
+
+  for (let i = 0; i < maxHighlights; i++) {
+    console.log("| " + procedures.map(p => p.highlights[i] || "").join(" | ") + " |");
+  }
+}
+
+displayProceduresSideBySide(procedures);
+
 
 const MedicalTourismtoThailand = () => {
   return (
@@ -36,7 +60,7 @@ const MedicalTourismtoThailand = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20" />
         <div className="relative h-full flex flex-col items-center justify-center text-white px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Medical Tourism in Thailand</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Medical Tourism in Asia & Europe</h1>
           <p className="text-xl md:text-2xl text-center max-w-2xl">World-class healthcare combined with luxury recovery in tropical paradise</p>
         </div>
       </div>
@@ -62,7 +86,7 @@ const MedicalTourismtoThailand = () => {
       {/* Why Choose Thailand */}
       <div className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Thailand for Medical Tourism</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Cardinal Tour & Travel for Medical Tourism</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { icon: <Hospital className="w-8 h-8" />, title: "JCI Accredited Hospitals", desc: "Internationally recognized healthcare facilities" },
@@ -99,9 +123,9 @@ const MedicalTourismtoThailand = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="mt-8 w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+                  {/* <button className="mt-8 w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
                     Request Information
-                  </button>
+                  </button> */}
                 </div>
               </div>
             ))}
@@ -135,10 +159,10 @@ const MedicalTourismtoThailand = () => {
       <div className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Start Your Medical Journey</h2>
-          <p className="text-gray-600 mb-8">Our healthcare consultants are ready to guide you through your medical tourism journey</p>
-          <button className="bg-blue-600 text-white py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300">
+          <p className="text-gray-600 mb-8">Our Team is ready to guide you through your medical tourism journey</p>
+          {/* <button className="bg-blue-600 text-white py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300">
             Get Free Consultation
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

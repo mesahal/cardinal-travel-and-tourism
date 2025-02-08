@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const dropdownClasses = `
     absolute top-full left-0 mt-1 py-2 rounded-lg shadow-xl
-    bg-purple-600 min-w-[200px] opacity-0 invisible 
+    bg-[#8E2157] min-w-[200px] opacity-0 invisible 
     group-hover:opacity-100 group-hover:visible 
     transition-all duration-200
   `;
@@ -36,20 +36,14 @@ const Navbar = () => {
     { path: "/visa-service", label: "Visa Services" },
     { path: "/air-ticket", label: "Air Ticket" },
     { path: "/group-ticket", label: "Group Ticket" },
-    
-    // { path: "/quarantine-packages", label: "Quarantine Packages" },
     { path: "/tour-packages", label: "Tour Packages" },
-    { path: "/student-visa", label: "Student Visa" },
+    { path: "/student-visa", label: "Student Consultency" },
     { path: "/arnim-protect", label: "Cardinal Protect" },
-    // { path: "/hotel-booking", label: "Hotel Booking" },
-    // { path: "/transfer-services", label: "Transfer Services" },
-    // { path: "/malaysia-singapore-bus-ticket", label: "Malaysia-Singapore Bus" },
-    // { path: "/ferry-services", label: "Ferry Services" },
     { path: "/medical-tourism-to-thailand", label: "Medical Tourism" },
   ];
 
   return (
-    <nav className="bg-purple-500 text-white">
+    <nav className="bg-[#8E2157] text-white">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Desktop Menu */}
@@ -98,7 +92,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <button
               onClick={clientLogin}
-              className="bg-white text-purple-600 hover:bg-purple-50 
+              className="bg-white text-[#8E2157] hover:bg-purple-50 
                 px-6 py-2 rounded-full font-medium transition-all duration-200"
             >
               Agent Login
@@ -146,7 +140,7 @@ const Navbar = () => {
             </Link>
             <button
               onClick={clientLogin}
-              className="bg-white text-purple-600 hover:bg-purple-50 
+              className="bg-white text-[#8E2157] hover:bg-purple-50 
                 px-6 py-2 rounded-full font-medium transition-all duration-200 mt-4"
             >
               Agent Login

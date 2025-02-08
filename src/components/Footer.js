@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       {" "}
       {/* Footer Section */}
-      <footer className="bg-purple-500 text-white p-4 text-center">
+      <footer className="bg-[#8E2157] text-white p-4 text-center">
         <p>
           &copy; {new Date().getFullYear()} Cardinal Tour & Travel. All Rights
           Reserved.

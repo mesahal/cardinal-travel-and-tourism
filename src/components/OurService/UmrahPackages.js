@@ -105,9 +105,9 @@ const UmrahPackages = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="mt-8 w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300">
+                  {/* <button className="mt-8 w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300">
                     Enquire Now
-                  </button>
+                  </button> */}
                 </div>
               </div>
             ))}
@@ -120,9 +120,9 @@ const UmrahPackages = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Need More Information?</h2>
           <p className="text-gray-600 mb-8">Our travel experts are here to help you plan your spiritual journey</p>
-          <button className="bg-green-600 text-white py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300">
+          {/* <button className="bg-green-600 text-white py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300">
             Contact Us
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
