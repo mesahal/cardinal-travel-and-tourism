@@ -30,9 +30,9 @@ const services = [
   {
     icon: <Shield className="w-8 h-8 text-blue-600" />,
     image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=60",
-    title: "Travel Protection",
-    description: "Comprehensive travel insurance for peace of mind",
+      "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&auto=format&fit=crop&q=60",
+    title: "Tour Package",
+    description: "Delightful Tour Package for enjoyment",
     path: "/tour-packages",
   },
   {
