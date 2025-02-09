@@ -1,7 +1,6 @@
 import React from 'react';
 import { Plane, Award, Globe2, Users2, Phone, Building2, Briefcase, MapPin } from 'lucide-react';
 
-
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -92,31 +91,28 @@ const AboutUs = () => {
         {/* Sister Concerns */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Our Sister Concerns</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {[ 
-              {
-                name: "ALHERA HARVEST",
-                description: "Agricultural and food processing company",
-                image: "/images/Alhera.png"
-              },
-              {
-                name: "CARDINAL TRADECOM LTD.",
-                description: "Import and export company",
-                image: "/images/Cardinal Tradecom.png"
-              }
-            ].map((company, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src={company.image} 
-                  alt={company.name}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-[#8e2157] mb-2">{company.name}</h3>
-                  <p className="text-gray-600">{company.description}</p>
+          <div className="flex justify-center">
+            <div className="max-w-2xl w-full">
+              {[ 
+                {
+                  name: "ALHERA HARVEST",
+                  description: "Agricultural and food processing company",
+                  image: "/images/Alhera.png"
+                }
+              ].map((company, index) => (
+                <div key={index} className="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src={company.image} 
+                    alt={company.name}
+                    className="w-full h-48 object-contain p-4"
+                  />
+                  <div className="p-6 text-center">
+                    <h3 className="text-xl font-semibold text-[#8e2157] mb-2">{company.name}</h3>
+                    <p className="text-gray-600">{company.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 
@@ -156,7 +152,7 @@ const AboutUs = () => {
           <p className="text-gray-600 mb-6">Contact us to plan your perfect travel experience</p>
           <div className="flex items-center justify-center space-x-4">
             <a
-              href="https://wa.me/+8801813279398"
+              href="https://wa.me/+8801897619789"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg font-semibold text-green-600 hover:text-green-800"
