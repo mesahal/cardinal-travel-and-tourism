@@ -1,79 +1,97 @@
 import React from "react";
-import { MapPin, Plane, Import as Passport, GraduationCap, Shield } from "lucide-react";
+import {
+  MapPin,
+  Plane,
+  Import as Passport,
+  GraduationCap,
+  Shield,
+} from "lucide-react";
+import Qatar from "../../assets/Qatar.jpg";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
     icon: <Passport className="w-8 h-8 text-blue-600" />,
-    image: "https://images.unsplash.com/photo-1554224155-1696413565d3?w=800&auto=format&fit=crop&q=60",
+    image:
+      "https://images.unsplash.com/photo-1554224155-1696413565d3?w=800&auto=format&fit=crop&q=60",
     title: "Visa Services",
-    description: "Expert visa consultation and processing services for all destinations",
-    path: "/visa-services",
+    description:
+      "Expert visa consultation and processing services for all destinations",
+    path: "/visa-service",
   },
   {
     icon: <Plane className="w-8 h-8 text-blue-600" />,
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&auto=format&fit=crop&q=60",
+    image:
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&auto=format&fit=crop&q=60",
     title: "Air Ticket Booking",
     description: "Competitive airfares for domestic and international flights",
+    path: "/air-ticket",
   },
   {
     icon: <Shield className="w-8 h-8 text-blue-600" />,
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=60",
+    image:
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=60",
     title: "Travel Protection",
     description: "Comprehensive travel insurance for peace of mind",
+    path: "/tour-packages",
   },
   {
     icon: <GraduationCap className="w-8 h-8 text-blue-600" />,
-    image: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?w=800&auto=format&fit=crop&q=60",
+    image:
+      "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?w=800&auto=format&fit=crop&q=60",
     title: "Student Services",
     description: "Complete support for international education aspirants",
+    path: "/student-visa",
   },
 ];
-
 const locations = [
   {
     country: "Malaysia",
     address: [
       "No. 6G, Jalan Dato Shaik Ahmad",
       "70000, Seremban",
-      "Negeri Sembilan, Malaysia"
-    ]
+      "Negeri Sembilan, Malaysia",
+    ],
   },
   {
     country: "Thailand",
     address: [
       "129/2 Soi Sukhumvit 55 (Thonglor 7)",
       "Klongtannua, Wattana",
-      "Bangkok 10110, Thailand"
-    ]
+      "Bangkok 10110, Thailand",
+    ],
   },
   {
     country: "Bangladesh",
     address: [
       "6/19 Eastern Plaza, 70 Bir Uttam",
       "CR Datta Road, Dhanmondi",
-      "Dhaka-1205"
-    ]
+      "Dhaka-1205",
+    ],
   },
   {
     country: "UAE",
     address: [
       "P.O. Box. 283963 Office No. 101m",
       "Bin Sought Building, Salad Al Din Road",
-      "AI Muraqqabat, Deira, Dubai - U.A.E."
-    ]
-  }
+      "AI Muraqqabat, Deira, Dubai - U.A.E.",
+    ],
+  },
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       {/* Hero Section */}
       <section className="relative bg-blue-900 text-white py-20">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&auto=format&fit=crop&q=80"
+            // src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&auto=format&fit=crop&q=80"
+            src={Qatar}
             alt="Travel Background"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="relative container mx-auto px-4">
@@ -81,7 +99,8 @@ const Home = () => {
             Your Trusted Travel Partner
           </h1>
           <p className="text-xl text-center max-w-2xl mx-auto">
-            Providing comprehensive travel solutions with reliability and excellence
+            Providing comprehensive travel solutions with reliability and
+            excellence
           </p>
         </div>
       </section>
@@ -101,6 +120,7 @@ const Home = () => {
           {services.map((service, index) => (
             <div
               key={index}
+              onClick={() => navigate(service.path)}
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group"
             >
               <div className="relative h-48">
@@ -111,7 +131,7 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
-              <div className="p-6">
+              <div className="p-6 mt-8">
                 <div className="flex items-center justify-center -mt-12 mb-4">
                   <div className="p-3 bg-white rounded-full shadow-md">
                     {service.icon}
@@ -134,10 +154,14 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-4">
-              <MapPin className="w-8 h-8 text-blue-600 mr-2" />
-              <h2 className="text-3xl font-bold text-gray-900">Global Presence</h2>
+              <MapPin className="w-8 h-8 text-[#8e2157] mr-2" />
+              <h2 className="text-3xl font-bold text-gray-900">
+                Global Presence
+              </h2>
             </div>
-            <p className="text-gray-600">Find us at our international offices</p>
+            <p className="text-gray-600">
+              Find us at our international offices
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -146,7 +170,7 @@ const Home = () => {
                 key={index}
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
               >
-                <h3 className="text-xl font-semibold text-[#885f65] mb-4">
+                <h3 className="text-xl font-semibold text-[#8e2157] mb-4">
                   {location.country} Office
                 </h3>
                 <div className="space-y-2">

@@ -53,7 +53,7 @@ const ContactForm = () => {
       <div className="max-w-3xl mx-auto">
         <div className="bg-white shadow-2xl rounded-3xl overflow-hidden">
           <div className="md:flex">
-            <div className="md:w-1/2 bg-gradient-to-br from-purple-600 to-indigo-600 p-8 text-white">
+            <div className="md:w-1/2 bg-gradient-to-br from-[#8e2157] to-[#ff66a3] p-8 text-white">
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
               <p className="mb-4 text-purple-100">
                 We'd love to hear from you. Send us a message and we'll respond as soon as possible.
@@ -123,7 +123,7 @@ const ContactForm = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-3 px-6 rounded-xl hover:from-purple-700 hover:to-indigo-700 transition duration-300 shadow-lg flex items-center justify-center space-x-2"
+                  className="w-full bg-gradient-to-r from-[#8e2157] to-[#ff66a3] text-white font-semibold py-3 px-6 rounded-xl transition duration-300 shadow-lg flex items-center justify-center space-x-2"
                 >
                   <span>Send Message</span>
                   <Send className="w-5 h-5" />
