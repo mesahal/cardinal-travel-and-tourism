@@ -39,15 +39,18 @@ function EgyptVisa() {
   };
 
   const requiredDocs = [
-    "Valid passport with at least 6 months validity",
-    "Recent passport-size photo",
-    "Bank statement (last 6 months)",
-    "Flight and hotel booking confirmation",
+    "Original Passport (Validity should be at least 06 Months from the date of departure)",
+    "Recent passport-	Recent 3.5 cm x 5.0 cm size photo with white background (2 Copy Mat Paper) photo",
+    "Visiting Card & National ID Card",
+    "N.O.C / G.O / Trade License Notarized Copy with Translate in English & Letterhead Pad",
+    "Original Bank statement for last six months. Minimum Balance Taka 200,000",
+    "Bank Solvency Certificate",
   ];
 
   const additionalDocs = [
-    "Invitation letter (if applicable)",
-    "Travel itinerary",
+    "Student ID Card for Student (if child travel with parent )",
+    "Birth Certificate for Infant (if child travel with parent )",
+    "Marriage Certificate for Couple (if travel together)",
   ];
 
   return (

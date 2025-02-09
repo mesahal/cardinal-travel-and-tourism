@@ -7,6 +7,7 @@ const services = [
     image: "https://images.unsplash.com/photo-1554224155-1696413565d3?w=800&auto=format&fit=crop&q=60",
     title: "Visa Services",
     description: "Expert visa consultation and processing services for all destinations",
+    path: "/visa-services",
   },
   {
     icon: <Plane className="w-8 h-8 text-blue-600" />,

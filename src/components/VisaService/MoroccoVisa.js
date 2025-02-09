@@ -40,15 +40,27 @@ function MoroccoVisa() {
 
   const requiredDocs = [
     "Valid passport with at least 6 months validity",
-    "Recent passport-size photo",
+    "Recent 2 x 2 inches size photo with white background (Soft Copy)",
     "Bank statement (last 6 months)",
+    "Previous Visited Country Visa Copy (Soft / Scan Copy)",
     "Flight and hotel booking confirmation",
+    "Round trip flight reservation",
+    "N.O.C / G.O/Trade License Copy (Soft / Scan Copy)",
+    "Bank Solvency Letter (Soft / Scan Copy)",
   ];
 
   const additionalDocs = [
     "Invitation letter (if applicable)",
     "Travel itinerary",
+    "Birth Certificate for Infant (if child travel with parent )",
+    "Student ID Card for Student (if child travel with parent )",
+    "Marriage Certificate (if applicable)",
   ];
+  const importantNote = (
+    <p style={{ color: "maroon", fontWeight: "bold" }}>
+     *Important Note: Please inform us of your approximate travel/intended date and port of entry before applying for an eVisa. The price will be fixed upon discussion.
+    </p>
+  );
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
@@ -83,6 +95,7 @@ function MoroccoVisa() {
               requiredDocs={requiredDocs}
               additionalDocs={additionalDocs}
             />
+            {importantNote}
           </div>
           <ContactSidebar />
         </div>

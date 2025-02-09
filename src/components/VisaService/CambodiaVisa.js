@@ -40,15 +40,23 @@ function CambodiaVisa() {
 
   const requiredDocs = [
     "Valid passport with at least 6 months validity",
-    "Recent passport-size photo",
+    "Recent passport-size photo with white background(Soft Copy)",
     "Bank statement (last 6 months)",
+    "Hotel booking confirmation",
     "Flight and hotel booking confirmation",
   ];
 
   const additionalDocs = [
     "Invitation letter (if applicable)",
-    "Travel itinerary",
+    "Health Isurance",
   ];
+  const importantNote = (
+    <p style={{ color: "maroon", fontWeight: "bold" }}>
+     *Important Note: Please inform us of your approximate travel/intended date and port of entry before applying for an eVisa. The price will be fixed upon discussion.
+    </p>
+  );
+  
+  
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
@@ -82,6 +90,7 @@ function CambodiaVisa() {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
             <RequiredDocuments title="Required Documents" requiredDocs={requiredDocs} additionalDocs={additionalDocs} />
+            {importantNote}
           </div>
           <ContactSidebar />
         </div>

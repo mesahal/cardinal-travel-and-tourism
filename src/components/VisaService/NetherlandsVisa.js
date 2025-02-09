@@ -43,12 +43,19 @@ function NetherlandsVisa() {
     "Recent passport-size photo",
     "Bank statement (last 6 months)",
     "Flight and hotel booking confirmation",
+    "Travel Health Insurance",
+
   ];
 
   const additionalDocs = [
     "Invitation letter (if applicable)",
     "Travel itinerary",
   ];
+  const importantNote = (
+    <p style={{ color: "maroon", fontWeight: "bold" }}>
+     *Important Note: Please inform us of your approximate travel/intended date and port of entry before applying for an eVisa. The price will be fixed upon discussion.
+    </p>
+  );
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
@@ -83,6 +90,7 @@ function NetherlandsVisa() {
               requiredDocs={requiredDocs}
               additionalDocs={additionalDocs}
             />
+            {importantNote}
           </div>
           <ContactSidebar />
         </div>

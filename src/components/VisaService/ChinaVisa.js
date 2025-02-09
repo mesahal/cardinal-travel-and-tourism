@@ -39,16 +39,22 @@ function ChinaVisa() {
   };
 
   const requiredDocs = [
-    "Valid passport with at least 6 months validity",
-    "Recent passport-size photo",
+    "Valid passport with at least 7 months validity",
+    "Recent 33 cm x 48 cm size  photo",
     "Bank statement (last 6 months)",
-    "Flight and hotel booking confirmation",
+    "Visiting Card, Educational and Family Information",
   ];
 
   const additionalDocs = [
-    "Invitation letter (if applicable)",
-    "Travel itinerary",
+    "No Need Interview",
+    "No Need Air Ticket & Hotel Booking Copy",
+    "No need more ducuments",
   ];
+  const importantNote = (
+    <p style={{ color: "maroon", fontWeight: "bold" }}>
+     *Important Note: Please inform us of your approximate travel/intended date and port of entry before applying for an eVisa. The price will be fixed upon discussion.
+    </p>
+  );
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
@@ -83,6 +89,7 @@ function ChinaVisa() {
               requiredDocs={requiredDocs}
               additionalDocs={additionalDocs}
             />
+             {importantNote}
           </div>
           <ContactSidebar />
         </div>

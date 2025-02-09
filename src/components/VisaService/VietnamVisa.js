@@ -36,6 +36,11 @@ function VietNamVisa() {
   ];
 
   const additionalDocuments = [];
+  const importantNote = (
+    <p style={{ color: "maroon", fontWeight: "bold" }}>
+     *Important Note: Please inform us of your approximate travel/intended date and port of entry before applying for an eVisa. The price will be fixed upon discussion.
+    </p>
+  );
 
   const handleCountryChange = (event) => {
     const selectedPath = countries.find(
