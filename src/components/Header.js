@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Facebook, Twitter, Instagram, Phone, Menu, X } from "lucide-react";
 import logo from "../assets/logo.jpg";
+import { AiOutlineWhatsApp } from "react-icons/ai"; // ✅ WhatsApp icon
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
@@ -73,13 +75,13 @@ const Header = () => {
                 >
                   <Instagram size={24} />
                 </a>
+                {/* WhatsApp Link */}
                 <a
                   href="https://wa.me/+8801897619789"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-gray-200 transition-colors"
+                  className="text-green-600 hover:text-green-800 transition-colors"
                 >
-                  <Phone size={24} />
+                  <AiOutlineWhatsApp size={24} />
                 </a>
               </div>
               <p className="text-sm font-semibold text-[#8e2157] bg-gray-100 p-1 rounded-lg shadow-md">
@@ -161,10 +163,9 @@ const Header = () => {
                   <a
                     href="https://wa.me/+8801897619789"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-gray-200 transition-colors"
+                    className="text-green-600 hover:text-green-800 transition-colors"
                   >
-                    <Phone size={24} />
+                    <AiOutlineWhatsApp size={24} />
                   </a>
                 </div>
               </div>
