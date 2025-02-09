@@ -39,9 +39,9 @@ const AirTicket = () => {
       return;
     }
 
-    const serviceID = "service_x2g1tgq";
-    const templateID = "template_c9k5xrd";
-    const publicKey = "mxL_Yw4s1rAgy6OK4";
+    const serviceID = "service_2p6z0n4";
+    const templateID = "template_wlgwzsd";
+    const publicKey = "lQm0lwI--CyJfWGLO";
 
     emailjs
       .send(serviceID, templateID, formData, publicKey)

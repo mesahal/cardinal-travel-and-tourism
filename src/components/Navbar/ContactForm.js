@@ -33,9 +33,9 @@ const ContactForm = () => {
       return;
     }
 
-    const serviceID = "service_x2g1tgq";
-    const templateID = "template_mc8o283";
-    const publicKey = "mxL_Yw4s1rAgy6OK4";
+    const serviceID = "service_73lidp4";
+    const templateID = "template_uajeess";
+    const publicKey = "qm4rpEB_91lXKENPj";
 
     emailjs
       .send(serviceID, templateID, formData, publicKey)
@@ -56,7 +56,8 @@ const ContactForm = () => {
             <div className="md:w-1/2 bg-gradient-to-br from-[#8e2157] to-[#ff66a3] p-8 text-white">
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
               <p className="mb-4 text-purple-100">
-                We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                We'd love to hear from you. Send us a message and we'll respond
+                as soon as possible.
               </p>
               {/* <div className="space-y-4 mt-8">
                 <div className="flex items-center space-x-4">
@@ -71,7 +72,9 @@ const ContactForm = () => {
             </div>
 
             <div className="md:w-1/2 p-8">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Send Message</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-6">
+                Send Message
+              </h3>
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">

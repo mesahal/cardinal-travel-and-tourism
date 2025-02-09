@@ -42,9 +42,9 @@ const AgentLogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceID = "service_x2g1tgq";
-    const templateID = "template_mc8o283";
-    const publicKey = "mxL_Yw4s1rAgy6OK4";
+    const serviceID = "service_73lidp4";
+    const templateID = "template_dobwdgh";
+    const publicKey = "qm4rpEB_91lXKENPj";
 
     emailjs
       .send(serviceID, templateID, formData, publicKey)
@@ -329,7 +329,7 @@ const AgentLogin = () => {
               <button
                 type="submit"
                 className="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#8e2157] to-[#ff66a3] text-white rounded-xl hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition"
-                >
+              >
                 Submit Registration
               </button>
             </form>
