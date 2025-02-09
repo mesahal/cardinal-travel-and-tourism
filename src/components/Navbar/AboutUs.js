@@ -211,7 +211,7 @@ const AboutUs = () => {
           </p>
           <div className="flex items-center justify-center space-x-4">
             <a
-              href="https://wa.me/+8801813279398"
+              href="https://wa.me/+8801897619789"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg font-semibold text-green-600 hover:text-green-800"

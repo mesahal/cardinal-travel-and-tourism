@@ -43,7 +43,7 @@ const AgentLogin = () => {
     e.preventDefault();
 
     const serviceID = "service_73lidp4";
-    const templateID = "template_dobwdgh";
+    const templateID = "template_mc8o283";
     const publicKey = "qm4rpEB_91lXKENPj";
 
     emailjs
