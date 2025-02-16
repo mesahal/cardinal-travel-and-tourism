@@ -42,9 +42,9 @@ const AgentLogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceID = "service_x2g1tgq";
+    const serviceID = "service_73lidp4";
     const templateID = "template_mc8o283";
-    const publicKey = "mxL_Yw4s1rAgy6OK4";
+    const publicKey = "qm4rpEB_91lXKENPj";
 
     emailjs
       .send(serviceID, templateID, formData, publicKey)
