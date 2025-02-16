@@ -21,8 +21,10 @@ const AirTicket = () => {
     toDate: "",
     passportNo: "",
     passportExpiry: "",
-    fromDestination: "", // New field
-    toDestination: "", // New field
+    fromDestination: "",
+    toDestination: "",
+    dateOfBirth: "", // New field
+    passportIssuanceDate: "", // New field
   });
   const [mobileError, setMobileError] = useState("");
 
@@ -67,8 +69,10 @@ const AirTicket = () => {
           toDate: "",
           passportNo: "",
           passportExpiry: "",
-          fromDestination: "", // Reset new field
-          toDestination: "", // Reset new field
+          fromDestination: "",
+          toDestination: "",
+          dateOfBirth: "", // Reset new field
+          passportIssuanceDate: "", // Reset new field
         });
       })
       .catch((error) => {
@@ -222,6 +226,45 @@ const AirTicket = () => {
                       placeholder="To Destination"
                       className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
                       value={formData.toDestination}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* New Date of Birth and Passport Issuance Date Fields */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="relative">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <Calendar className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <label className="font-semibold text-gray-800">
+                      Date of Birth
+                    </label>
+                    <input
+                      type="date"
+                      name="dateOfBirth"
+                      placeholder="Date of Birth"
+                      className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                      value={formData.dateOfBirth}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <Calendar className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <label className="font-semibold text-gray-800">
+                      Passport Issuance Date
+                    </label>
+                    <input
+                      type="date"
+                      name="passportIssuanceDate"
+                      placeholder="Passport Issuance Date"
+                      className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                      value={formData.passportIssuanceDate}
                       onChange={handleChange}
                       required
                     />
