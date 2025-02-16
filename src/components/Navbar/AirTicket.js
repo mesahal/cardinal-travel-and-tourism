@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { Send, User, Phone, Flag, Calendar, BadgeCheck } from "lucide-react";
+import {
+  Send,
+  User,
+  Phone,
+  Flag,
+  Calendar,
+  BadgeCheck,
+  MapPin,
+} from "lucide-react";
 
 const AirTicket = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +21,8 @@ const AirTicket = () => {
     toDate: "",
     passportNo: "",
     passportExpiry: "",
+    fromDestination: "", // New field
+    toDestination: "", // New field
   });
   const [mobileError, setMobileError] = useState("");
 
@@ -46,7 +56,7 @@ const AirTicket = () => {
     emailjs
       .send(serviceID, templateID, formData, publicKey)
       .then(() => {
-        alert("Ait Ticket information submitted successfully!");
+        alert("Air Ticket information submitted successfully!");
         setFormData({
           title: "",
           firstName: "",
@@ -57,6 +67,8 @@ const AirTicket = () => {
           toDate: "",
           passportNo: "",
           passportExpiry: "",
+          fromDestination: "", // Reset new field
+          toDestination: "", // Reset new field
         });
       })
       .catch((error) => {
@@ -176,6 +188,45 @@ const AirTicket = () => {
                 {mobileError && (
                   <p className="text-red-500 text-sm mt-1">{mobileError}</p>
                 )}
+
+                {/* New From and To Destination Fields */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="relative">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <MapPin className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <label className="font-semibold text-gray-800">
+                      From Airport/ Origin
+                    </label>
+                    <input
+                      type="text"
+                      name="fromDestination"
+                      placeholder="From Destination"
+                      className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                      value={formData.fromDestination}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="relative">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <MapPin className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <label className="font-semibold text-gray-800">
+                      To Airport/ Destination
+                    </label>
+                    <input
+                      type="text"
+                      name="toDestination"
+                      placeholder="To Destination"
+                      className="w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition"
+                      value={formData.toDestination}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="relative">
