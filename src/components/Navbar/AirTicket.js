@@ -39,14 +39,14 @@ const AirTicket = () => {
       return;
     }
 
-    const serviceID = "service_2p6z0n4";
-    const templateID = "template_wlgwzsd";
-    const publicKey = "24LoJUUF6LqSdSGWc";
+    const serviceID = "service_zifzitt";
+    const templateID = "template_k08ht9r";
+    const publicKey = "ghWUrReTORwqv-5mi";
 
     emailjs
       .send(serviceID, templateID, formData, publicKey)
       .then(() => {
-        alert("Registration submitted successfully!");
+        alert("Ait Ticket information submitted successfully!");
         setFormData({
           title: "",
           firstName: "",
